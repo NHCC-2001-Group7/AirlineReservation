@@ -149,6 +149,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button4E.setBounds(486, 284, 36, 36);
         getContentPane().add(button4F);
         button4F.setBounds(522, 284, 36, 36);
+
+        button5A.setBorderPainted(false);
         getContentPane().add(button5A);
         button5A.setBounds(312, 250, 36, 36);
         getContentPane().add(button5B);
