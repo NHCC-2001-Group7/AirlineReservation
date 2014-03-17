@@ -6,25 +6,13 @@
 
 package airlineReservation;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Random;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
-
-    
-
-
 /**
  *
- * @authors: Mike Plucker, Billy Lam, Xavier Porter
- * @Class: CSCI 2001-51
- * @Due Date: 03/31/14
+ * @author: Mike Plucker, Billy Lam, Xavier Porter
+ * Class: CSCI 2001-51
+ * Due Date: 03/31/14
  * 
- * @Version 1.00
+ * Version 1.00
  * Objective: A small airline has just purchased a computer for its new automated reservations system. 
  * You’ve been asked to develop the new system.You’re to write an application to assign seats on each flight of the airline’s only plane (capacity: 10 seats).
  * 
@@ -40,6 +28,13 @@ import javax.sound.sampled.UnsupportedAudioFileException;
  *    - If yes, make the appropriate seat assignment. If no, display the message "Next flight leaves in 3 hours."
  * 
  */
+
+
+//import classes
+import java.util.Random;
+import java.io.*;
+import javax.sound.sampled.*;
+
 
 public class AirlineReservation {
     

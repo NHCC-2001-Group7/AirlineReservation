@@ -10,6 +10,13 @@ package airlineReservation;
  *
  * @author Sved
  */
+
 public class AirlineReservationTest {
     
+    public static void main(String[] args){
+    
+        //create and display GUI
+        AirlineReservationGUI gui = new AirlineReservationGUI();
+        gui.setVisible(true);
+    }
 }
