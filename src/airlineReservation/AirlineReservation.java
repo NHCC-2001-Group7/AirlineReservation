@@ -38,27 +38,13 @@ import javax.sound.sampled.*;
 
 public class AirlineReservation {
     
-
-    /**
-     *Creates a boolean array, seats containing 10 elements.
-     */
-    private boolean[] seats = new boolean [10];//create a boolean array, default value is false
-
-    /**
-     * Creates a boolean for the firstClass.
-     */
-    private boolean firstClass;
-
-    /**
-     * Creates a boolean for the economyClass.
-     */
-    private boolean economyClass;
-
-    /**
-     * Creates an object random.
-     */
+    
+    private boolean[] isTaken_FC = new boolean [7]; //create first class array
+    private boolean[] isTaken_EC = new boolean [17]; //create economy class array
+    private int[] seatImages = new int [3]; //create seat images array
+    
     private final Random rand = new Random();
-
+    
 
 
     /**
@@ -66,102 +52,15 @@ public class AirlineReservation {
      */
     public AirlineReservation (){
 
-}
-
-
-    /**
-     * Method to retrieve first class
-     * @return
-     */
-    public boolean getfirstClass(){
-    return firstClass;
-}
-
-
-    /**
-     *
-     * @param firstClass 
-     */
-    public void setFirstclass(boolean firstClass){  
-    this.firstClass = firstClass;
-}
-
-
-    /**
-     *
-     * @param firstClass Calculates the seating arrangement for the first Class
-     * @return
-     */
-    public boolean[] firstSeatOrder(boolean firstClass){
-
-         this.firstClass = firstClass;
-         
-         seats[(int)(Math.random()*5)] = true; //Selects a random value, 1-5 to true.
-        
-         boolean[] firstSeat = seats; //reference array
-
-         return firstSeat; //return array
-}
-        
-
-    /**
-     * Method to retrieve the economy class
-     * @return
-     */
-    public boolean geteconomyClass(){
-    return economyClass;
-}
+    }
 
     
-    /**
-     *
-     * @param economyClass Set method for the economyClass
-     */
-    public void setEconomyclass(boolean economyClass){  
-    this.economyClass = economyClass;
-}
-
-
-    /**
-     *
-     * @param economyClass Calculates the class seating for the economy class.
-     * @return economySeat
-     */
-    public boolean[] economySeatOrder(boolean economyClass){
-
-         this.economyClass = economyClass;
+    public void selectFirstClass(int num){
         
-         seats[6+ (int)(Math.random()*(10 - 6))] = true; //Changes a random value 6-10 to true.
+        isTaken_FC[num]=true;
+    }
 
-         boolean[] economySeat = seats; //reference array
-
-         return economySeat; //return array
-}
-     /**
-     *
-     * @param optionalSeating If seating is full for first class, provide additional seating in economy class(vice-versa)
-     * @return economySeat
-     */
-    public boolean optionalSeating(boolean[] economySeat, boolean[] firstSeat){
-       
-        boolean seatFull = true;
-        boolean option = false;
-        for(int i =0; i < seats.length; i++){ //loop through array
-            
-            if(economySeat[i]== seatFull){ //Not quite to sure about this
-                
-                seats[(int)(Math.random()*5)] = true; //Selects a random value, 1-5 to true.
-                option = seats[(int)(Math.random()*5)];
-            }
-            if (firstSeat[i] == true){ //This one as well
-                
-                seats[6+ (int)(Math.random()*(10 - 6))] = true; //Changes a random value 6-10 to true.
-                 option = seats[6+ (int)(Math.random()*(10 - 6))];
-            }
-        }
-          return option;
-        
- }
+  
 
     /**
      *
