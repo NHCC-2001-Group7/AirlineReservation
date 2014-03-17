@@ -41,9 +41,15 @@ public class AirlineReservation {
     
     private boolean[] isTaken_FC = new boolean [7]; //create first class array
     private boolean[] isTaken_EC = new boolean [17]; //create economy class array
-    private int[] seatImages = new int [3]; //create seat images array
+    
     
     private final Random rand = new Random();
+    
+    String image1 = "";
+    String image2 = "";
+    String image3 = "";
+    
+    private String[] seatImages = {image1, image2, image3}; //create seat images array
     
 
 
@@ -57,10 +63,15 @@ public class AirlineReservation {
     
     public void selectFirstClass(int num){
         
-        isTaken_FC[num]=true;
+        isTaken_FC[num] = true;
+    }
+    
+    public void selectEconomyClass(int num){
+        
+        isTaken_EC[num] = true;
     }
 
-  
+    
 
     /**
      *
