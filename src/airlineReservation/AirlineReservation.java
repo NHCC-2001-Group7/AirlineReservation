@@ -63,6 +63,11 @@ public class AirlineReservation {
     
     public void selectFirstClass(int num){
         
+        for(int i=0; i<isTaken_FC.length;i++){
+            boolean red = Boolean.parseBoolean(image1); //convert string to boolean
+            isTaken_FC[i]=red; //sets default image for first class
+        }
+        
         isTaken_FC[num] = true;
     }
     
