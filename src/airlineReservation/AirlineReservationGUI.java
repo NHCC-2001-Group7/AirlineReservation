@@ -43,32 +43,32 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jToggleButton5 = new javax.swing.JToggleButton();
-        jToggleButton6 = new javax.swing.JToggleButton();
-        jToggleButton7 = new javax.swing.JToggleButton();
-        jToggleButton8 = new javax.swing.JToggleButton();
-        jToggleButton9 = new javax.swing.JToggleButton();
-        jToggleButton10 = new javax.swing.JToggleButton();
-        jToggleButton11 = new javax.swing.JToggleButton();
-        jToggleButton2 = new javax.swing.JToggleButton();
-        jToggleButton3 = new javax.swing.JToggleButton();
-        jToggleButton4 = new javax.swing.JToggleButton();
-        jToggleButton12 = new javax.swing.JToggleButton();
-        jToggleButton13 = new javax.swing.JToggleButton();
-        jToggleButton14 = new javax.swing.JToggleButton();
-        jToggleButton15 = new javax.swing.JToggleButton();
-        jToggleButton16 = new javax.swing.JToggleButton();
-        jToggleButton17 = new javax.swing.JToggleButton();
-        jToggleButton18 = new javax.swing.JToggleButton();
-        jToggleButton19 = new javax.swing.JToggleButton();
-        jToggleButton20 = new javax.swing.JToggleButton();
-        jToggleButton21 = new javax.swing.JToggleButton();
-        jToggleButton22 = new javax.swing.JToggleButton();
-        jToggleButton23 = new javax.swing.JToggleButton();
-        jToggleButton24 = new javax.swing.JToggleButton();
-        jToggleButton25 = new javax.swing.JToggleButton();
-        jToggleButton26 = new javax.swing.JToggleButton();
+        button1A = new javax.swing.JToggleButton();
+        button1B = new javax.swing.JToggleButton();
+        button1C = new javax.swing.JToggleButton();
+        button1D = new javax.swing.JToggleButton();
+        button2A = new javax.swing.JToggleButton();
+        button2B = new javax.swing.JToggleButton();
+        button2C = new javax.swing.JToggleButton();
+        button2D = new javax.swing.JToggleButton();
+        button3A = new javax.swing.JToggleButton();
+        button3B = new javax.swing.JToggleButton();
+        button3C = new javax.swing.JToggleButton();
+        button3D = new javax.swing.JToggleButton();
+        button3E = new javax.swing.JToggleButton();
+        button3F = new javax.swing.JToggleButton();
+        button4A = new javax.swing.JToggleButton();
+        button4B = new javax.swing.JToggleButton();
+        button4C = new javax.swing.JToggleButton();
+        button4D = new javax.swing.JToggleButton();
+        button4E = new javax.swing.JToggleButton();
+        button4F = new javax.swing.JToggleButton();
+        button5A = new javax.swing.JToggleButton();
+        button5B = new javax.swing.JToggleButton();
+        button5C = new javax.swing.JToggleButton();
+        button5D = new javax.swing.JToggleButton();
+        button5E = new javax.swing.JToggleButton();
+        button5F = new javax.swing.JToggleButton();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -77,109 +77,109 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(670, 656));
         getContentPane().setLayout(null);
 
-        jToggleButton1.setText("1 C");
-        getContentPane().add(jToggleButton1);
-        jToggleButton1.setBounds(458, 444, 48, 48);
+        button1A.setText("1 A");
+        getContentPane().add(button1A);
+        button1A.setBounds(316, 444, 48, 48);
 
-        jToggleButton5.setText("1 A");
-        getContentPane().add(jToggleButton5);
-        jToggleButton5.setBounds(316, 444, 48, 48);
+        button1B.setText("1 B");
+        getContentPane().add(button1B);
+        button1B.setBounds(366, 444, 48, 48);
 
-        jToggleButton6.setText("1 D");
-        getContentPane().add(jToggleButton6);
-        jToggleButton6.setBounds(506, 444, 48, 48);
+        button1C.setText("1 C");
+        getContentPane().add(button1C);
+        button1C.setBounds(458, 444, 48, 48);
 
-        jToggleButton7.setText("2 A");
-        getContentPane().add(jToggleButton7);
-        jToggleButton7.setBounds(316, 394, 48, 48);
+        button1D.setText("1 D");
+        getContentPane().add(button1D);
+        button1D.setBounds(506, 444, 48, 48);
 
-        jToggleButton8.setText("2 B");
-        getContentPane().add(jToggleButton8);
-        jToggleButton8.setBounds(366, 394, 48, 48);
+        button2A.setText("2 A");
+        getContentPane().add(button2A);
+        button2A.setBounds(316, 394, 48, 48);
 
-        jToggleButton9.setText("2 C");
-        getContentPane().add(jToggleButton9);
-        jToggleButton9.setBounds(458, 394, 48, 48);
+        button2B.setText("2 B");
+        getContentPane().add(button2B);
+        button2B.setBounds(366, 394, 48, 48);
 
-        jToggleButton10.setText("2 D");
-        getContentPane().add(jToggleButton10);
-        jToggleButton10.setBounds(506, 394, 48, 48);
+        button2C.setText("2 C");
+        getContentPane().add(button2C);
+        button2C.setBounds(458, 394, 48, 48);
 
-        jToggleButton11.setText("1 B");
-        getContentPane().add(jToggleButton11);
-        jToggleButton11.setBounds(366, 444, 48, 48);
+        button2D.setText("2 D");
+        getContentPane().add(button2D);
+        button2D.setBounds(506, 394, 48, 48);
 
-        jToggleButton2.setText("jToggleButton2");
-        getContentPane().add(jToggleButton2);
-        jToggleButton2.setBounds(348, 320, 36, 38);
+        button3A.setText("jToggleButton2");
+        getContentPane().add(button3A);
+        button3A.setBounds(312, 321, 36, 36);
 
-        jToggleButton3.setText("jToggleButton2");
-        getContentPane().add(jToggleButton3);
-        jToggleButton3.setBounds(384, 320, 36, 38);
+        button3B.setText("jToggleButton2");
+        getContentPane().add(button3B);
+        button3B.setBounds(348, 320, 36, 38);
 
-        jToggleButton4.setText("jToggleButton2");
-        getContentPane().add(jToggleButton4);
-        jToggleButton4.setBounds(450, 320, 36, 36);
+        button3C.setText("jToggleButton2");
+        getContentPane().add(button3C);
+        button3C.setBounds(384, 320, 36, 38);
 
-        jToggleButton12.setText("jToggleButton2");
-        getContentPane().add(jToggleButton12);
-        jToggleButton12.setBounds(486, 320, 36, 36);
+        button3D.setText("jToggleButton2");
+        getContentPane().add(button3D);
+        button3D.setBounds(450, 320, 36, 36);
 
-        jToggleButton13.setText("jToggleButton2");
-        getContentPane().add(jToggleButton13);
-        jToggleButton13.setBounds(522, 320, 36, 36);
+        button3E.setText("jToggleButton2");
+        getContentPane().add(button3E);
+        button3E.setBounds(486, 320, 36, 36);
 
-        jToggleButton14.setText("jToggleButton2");
-        getContentPane().add(jToggleButton14);
-        jToggleButton14.setBounds(312, 286, 36, 36);
+        button3F.setText("jToggleButton2");
+        getContentPane().add(button3F);
+        button3F.setBounds(522, 320, 36, 36);
 
-        jToggleButton15.setText("jToggleButton2");
-        getContentPane().add(jToggleButton15);
-        jToggleButton15.setBounds(348, 286, 36, 36);
+        button4A.setText("jToggleButton2");
+        getContentPane().add(button4A);
+        button4A.setBounds(312, 286, 36, 36);
 
-        jToggleButton16.setText("jToggleButton2");
-        getContentPane().add(jToggleButton16);
-        jToggleButton16.setBounds(384, 286, 36, 36);
+        button4B.setText("jToggleButton2");
+        getContentPane().add(button4B);
+        button4B.setBounds(348, 286, 36, 36);
 
-        jToggleButton17.setText("jToggleButton2");
-        getContentPane().add(jToggleButton17);
-        jToggleButton17.setBounds(450, 284, 36, 36);
+        button4C.setText("jToggleButton2");
+        getContentPane().add(button4C);
+        button4C.setBounds(384, 286, 36, 36);
 
-        jToggleButton18.setText("jToggleButton2");
-        getContentPane().add(jToggleButton18);
-        jToggleButton18.setBounds(486, 284, 36, 36);
+        button4D.setText("jToggleButton2");
+        getContentPane().add(button4D);
+        button4D.setBounds(450, 284, 36, 36);
 
-        jToggleButton19.setText("jToggleButton2");
-        getContentPane().add(jToggleButton19);
-        jToggleButton19.setBounds(522, 284, 36, 36);
+        button4E.setText("jToggleButton2");
+        getContentPane().add(button4E);
+        button4E.setBounds(486, 284, 36, 36);
 
-        jToggleButton20.setText("jToggleButton2");
-        getContentPane().add(jToggleButton20);
-        jToggleButton20.setBounds(312, 250, 36, 36);
+        button4F.setText("jToggleButton2");
+        getContentPane().add(button4F);
+        button4F.setBounds(522, 284, 36, 36);
 
-        jToggleButton21.setText("jToggleButton2");
-        getContentPane().add(jToggleButton21);
-        jToggleButton21.setBounds(348, 250, 36, 36);
+        button5A.setText("jToggleButton2");
+        getContentPane().add(button5A);
+        button5A.setBounds(312, 250, 36, 36);
 
-        jToggleButton22.setText("jToggleButton2");
-        getContentPane().add(jToggleButton22);
-        jToggleButton22.setBounds(384, 250, 36, 36);
+        button5B.setText("jToggleButton2");
+        getContentPane().add(button5B);
+        button5B.setBounds(348, 250, 36, 36);
 
-        jToggleButton23.setText("jToggleButton2");
-        getContentPane().add(jToggleButton23);
-        jToggleButton23.setBounds(450, 250, 36, 36);
+        button5C.setText("jToggleButton2");
+        getContentPane().add(button5C);
+        button5C.setBounds(384, 250, 36, 36);
 
-        jToggleButton24.setText("jToggleButton2");
-        getContentPane().add(jToggleButton24);
-        jToggleButton24.setBounds(486, 250, 36, 36);
+        button5D.setText("jToggleButton2");
+        getContentPane().add(button5D);
+        button5D.setBounds(450, 250, 36, 36);
 
-        jToggleButton25.setText("jToggleButton2");
-        getContentPane().add(jToggleButton25);
-        jToggleButton25.setBounds(522, 250, 36, 36);
+        button5E.setText("jToggleButton2");
+        getContentPane().add(button5E);
+        button5E.setBounds(486, 250, 36, 36);
 
-        jToggleButton26.setText("jToggleButton2");
-        getContentPane().add(jToggleButton26);
-        jToggleButton26.setBounds(312, 321, 36, 36);
+        button5F.setText("jToggleButton2");
+        getContentPane().add(button5F);
+        button5F.setBounds(522, 250, 36, 36);
 
         background.setBackground(new java.awt.Color(153, 255, 153));
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline 14.jpg"))); // NOI18N
@@ -227,31 +227,31 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton10;
-    private javax.swing.JToggleButton jToggleButton11;
-    private javax.swing.JToggleButton jToggleButton12;
-    private javax.swing.JToggleButton jToggleButton13;
-    private javax.swing.JToggleButton jToggleButton14;
-    private javax.swing.JToggleButton jToggleButton15;
-    private javax.swing.JToggleButton jToggleButton16;
-    private javax.swing.JToggleButton jToggleButton17;
-    private javax.swing.JToggleButton jToggleButton18;
-    private javax.swing.JToggleButton jToggleButton19;
-    private javax.swing.JToggleButton jToggleButton2;
-    private javax.swing.JToggleButton jToggleButton20;
-    private javax.swing.JToggleButton jToggleButton21;
-    private javax.swing.JToggleButton jToggleButton22;
-    private javax.swing.JToggleButton jToggleButton23;
-    private javax.swing.JToggleButton jToggleButton24;
-    private javax.swing.JToggleButton jToggleButton25;
-    private javax.swing.JToggleButton jToggleButton26;
-    private javax.swing.JToggleButton jToggleButton3;
-    private javax.swing.JToggleButton jToggleButton4;
-    private javax.swing.JToggleButton jToggleButton5;
-    private javax.swing.JToggleButton jToggleButton6;
-    private javax.swing.JToggleButton jToggleButton7;
-    private javax.swing.JToggleButton jToggleButton8;
-    private javax.swing.JToggleButton jToggleButton9;
+    private javax.swing.JToggleButton button1A;
+    private javax.swing.JToggleButton button1B;
+    private javax.swing.JToggleButton button1C;
+    private javax.swing.JToggleButton button1D;
+    private javax.swing.JToggleButton button2A;
+    private javax.swing.JToggleButton button2B;
+    private javax.swing.JToggleButton button2C;
+    private javax.swing.JToggleButton button2D;
+    private javax.swing.JToggleButton button3A;
+    private javax.swing.JToggleButton button3B;
+    private javax.swing.JToggleButton button3C;
+    private javax.swing.JToggleButton button3D;
+    private javax.swing.JToggleButton button3E;
+    private javax.swing.JToggleButton button3F;
+    private javax.swing.JToggleButton button4A;
+    private javax.swing.JToggleButton button4B;
+    private javax.swing.JToggleButton button4C;
+    private javax.swing.JToggleButton button4D;
+    private javax.swing.JToggleButton button4E;
+    private javax.swing.JToggleButton button4F;
+    private javax.swing.JToggleButton button5A;
+    private javax.swing.JToggleButton button5B;
+    private javax.swing.JToggleButton button5C;
+    private javax.swing.JToggleButton button5D;
+    private javax.swing.JToggleButton button5E;
+    private javax.swing.JToggleButton button5F;
     // End of variables declaration//GEN-END:variables
 }

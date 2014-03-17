@@ -32,17 +32,7 @@
     <Property name="useNullLayout" type="boolean" value="true"/>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="1 C"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="458" y="444" width="48" height="48"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton5">
+    <Component class="javax.swing.JToggleButton" name="button1A">
       <Properties>
         <Property name="text" type="java.lang.String" value="1 A"/>
       </Properties>
@@ -52,57 +42,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton6">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="1 D"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="506" y="444" width="48" height="48"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton7">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="2 A"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="316" y="394" width="48" height="48"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton8">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="2 B"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="366" y="394" width="48" height="48"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton9">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="2 C"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="458" y="394" width="48" height="48"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton10">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="2 D"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="506" y="394" width="48" height="48"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton11">
+    <Component class="javax.swing.JToggleButton" name="button1B">
       <Properties>
         <Property name="text" type="java.lang.String" value="1 B"/>
       </Properties>
@@ -112,7 +52,77 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton2">
+    <Component class="javax.swing.JToggleButton" name="button1C">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1 C"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="458" y="444" width="48" height="48"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="button1D">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1 D"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="506" y="444" width="48" height="48"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="button2A">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2 A"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="316" y="394" width="48" height="48"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="button2B">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2 B"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="366" y="394" width="48" height="48"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="button2C">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2 C"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="458" y="394" width="48" height="48"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="button2D">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2 D"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="506" y="394" width="48" height="48"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="button3A">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jToggleButton2"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="312" y="321" width="36" height="36"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="button3B">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -122,7 +132,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton3">
+    <Component class="javax.swing.JToggleButton" name="button3C">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -132,7 +142,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton4">
+    <Component class="javax.swing.JToggleButton" name="button3D">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -142,7 +152,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton12">
+    <Component class="javax.swing.JToggleButton" name="button3E">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -152,7 +162,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton13">
+    <Component class="javax.swing.JToggleButton" name="button3F">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -162,7 +172,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton14">
+    <Component class="javax.swing.JToggleButton" name="button4A">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -172,7 +182,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton15">
+    <Component class="javax.swing.JToggleButton" name="button4B">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -182,7 +192,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton16">
+    <Component class="javax.swing.JToggleButton" name="button4C">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -192,7 +202,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton17">
+    <Component class="javax.swing.JToggleButton" name="button4D">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -202,7 +212,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton18">
+    <Component class="javax.swing.JToggleButton" name="button4E">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -212,7 +222,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton19">
+    <Component class="javax.swing.JToggleButton" name="button4F">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -222,7 +232,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton20">
+    <Component class="javax.swing.JToggleButton" name="button5A">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -232,7 +242,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton21">
+    <Component class="javax.swing.JToggleButton" name="button5B">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -242,7 +252,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton22">
+    <Component class="javax.swing.JToggleButton" name="button5C">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -252,7 +262,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton23">
+    <Component class="javax.swing.JToggleButton" name="button5D">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -262,7 +272,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton24">
+    <Component class="javax.swing.JToggleButton" name="button5E">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
@@ -272,23 +282,13 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton25">
+    <Component class="javax.swing.JToggleButton" name="button5F">
       <Properties>
         <Property name="text" type="java.lang.String" value="jToggleButton2"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="522" y="250" width="36" height="36"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton26">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jToggleButton2"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="312" y="321" width="36" height="36"/>
         </Constraint>
       </Constraints>
     </Component>
