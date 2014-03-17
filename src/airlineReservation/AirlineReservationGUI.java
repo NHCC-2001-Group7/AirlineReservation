@@ -79,6 +79,11 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
         button1A.setText("1 A");
         button1A.setToolTipText("");
+        button1A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1AActionPerformed(evt);
+            }
+        });
         getContentPane().add(button1A);
         button1A.setBounds(316, 444, 48, 48);
 
@@ -163,6 +168,11 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private void button3BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3BActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_button3BActionPerformed
+
+    private void button1AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1AActionPerformed
+        airline.selectFirstClass(0);
+        
+    }//GEN-LAST:event_button1AActionPerformed
 
     /**
      * @param args the command line arguments
