@@ -69,6 +69,11 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button5D = new javax.swing.JToggleButton();
         button5E = new javax.swing.JToggleButton();
         button5F = new javax.swing.JToggleButton();
+        EnterNameLabel = new javax.swing.JLabel();
+        NameTextField = new javax.swing.JTextField();
+        ChooseSeatLabel = new javax.swing.JLabel();
+        HitAcceptLabel = new javax.swing.JLabel();
+        ACCEPTbutton = new javax.swing.JButton();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -157,6 +162,35 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         getContentPane().add(button5F);
         button5F.setBounds(522, 250, 36, 36);
 
+        EnterNameLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        EnterNameLabel.setText("Please Enter Your Name");
+        getContentPane().add(EnterNameLabel);
+        EnterNameLabel.setBounds(28, 118, 230, 26);
+
+        NameTextField.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        NameTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NameTextFieldActionPerformed(evt);
+            }
+        });
+        getContentPane().add(NameTextField);
+        NameTextField.setBounds(26, 142, 252, 30);
+
+        ChooseSeatLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        ChooseSeatLabel.setText("Please Choose a Seat on the Plane");
+        getContentPane().add(ChooseSeatLabel);
+        ChooseSeatLabel.setBounds(28, 178, 248, 34);
+
+        HitAcceptLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        HitAcceptLabel.setText("Hit Accept");
+        getContentPane().add(HitAcceptLabel);
+        HitAcceptLabel.setBounds(28, 214, 242, 28);
+
+        ACCEPTbutton.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
+        ACCEPTbutton.setText("ACCEPT");
+        getContentPane().add(ACCEPTbutton);
+        ACCEPTbutton.setBounds(60, 252, 174, 52);
+
         background.setBackground(new java.awt.Color(153, 255, 153));
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline 14.jpg"))); // NOI18N
         getContentPane().add(background);
@@ -173,6 +207,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         airline.selectFirstClass(0);
         
     }//GEN-LAST:event_button1AActionPerformed
+
+    private void NameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NameTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NameTextFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -211,6 +249,11 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ACCEPTbutton;
+    private javax.swing.JLabel ChooseSeatLabel;
+    private javax.swing.JLabel EnterNameLabel;
+    private javax.swing.JLabel HitAcceptLabel;
+    private javax.swing.JTextField NameTextField;
     private javax.swing.JLabel background;
     private javax.swing.JToggleButton button1A;
     private javax.swing.JToggleButton button1B;
