@@ -76,12 +76,13 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Vay Cay Shun Airlines");
-        setMaximumSize(new java.awt.Dimension(670, 656));
         setMinimumSize(new java.awt.Dimension(670, 656));
         getContentPane().setLayout(null);
 
         button1A.setText("1 A");
         button1A.setToolTipText("");
+        button1A.setRolloverEnabled(false);
+        button1A.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline Green Button.jpg"))); // NOI18N
         button1A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 button1AActionPerformed(evt);
@@ -91,6 +92,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1A.setBounds(316, 444, 48, 48);
 
         button1B.setText("1 B");
+        button1B.setRolloverEnabled(false);
+        button1B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline Green Button.jpg"))); // NOI18N
         getContentPane().add(button1B);
         button1B.setBounds(366, 444, 48, 48);
 
@@ -154,6 +157,9 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button5A.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline Green Button.jpg"))); // NOI18N
         getContentPane().add(button5A);
         button5A.setBounds(312, 250, 36, 36);
+
+        button5B.setRolloverEnabled(false);
+        button5B.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline Green Button.jpg"))); // NOI18N
         getContentPane().add(button5B);
         button5B.setBounds(348, 250, 36, 36);
         getContentPane().add(button5C);
