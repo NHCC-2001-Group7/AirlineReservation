@@ -14,9 +14,6 @@ package airlineReservation;
 
 
 //import classes
-import java.awt.Color;
-import java.io.*;
-
 
 public class AirlineReservationGUI extends javax.swing.JFrame {
     
@@ -254,13 +251,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         });
         
         
-    }
-    
-    private void button5A(java.awt.event.ActionEvent evt) {                                             
-        setUpButton(); //call method to set-up button
-        
-        button5A.setBackground(Color.green); 
-    }                              
+    }               
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ACCEPTbutton;
