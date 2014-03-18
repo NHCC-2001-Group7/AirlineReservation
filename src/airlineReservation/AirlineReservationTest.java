@@ -8,8 +8,9 @@ package airlineReservation;
 
 /**
  *
- * @author Sved
+ * @author Mike Plucker, Billy Lam, Xavier Porter
  */
+
 
 public class AirlineReservationTest {
     
