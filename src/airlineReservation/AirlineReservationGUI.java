@@ -14,6 +14,7 @@ package airlineReservation;
 
 
 //import classes
+import java.awt.Color;
 import java.io.*;
 
 
@@ -151,6 +152,9 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button4F.setBounds(522, 284, 36, 36);
 
         button5A.setBorderPainted(false);
+        button5A.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        button5A.setRolloverEnabled(false);
+        button5A.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline Green Button.jpg"))); // NOI18N
         getContentPane().add(button5A);
         button5A.setBounds(312, 250, 36, 36);
         getContentPane().add(button5B);
@@ -248,7 +252,15 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 new AirlineReservationGUI().setVisible(true);
             }
         });
+        
+        
     }
+    
+    private void button5A(java.awt.event.ActionEvent evt) {                                             
+        setUpButton(); //call method to set-up button
+        
+        button5A.setBackground(Color.green); 
+    }                              
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ACCEPTbutton;
@@ -284,4 +296,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private javax.swing.JToggleButton button5E;
     private javax.swing.JToggleButton button5F;
     // End of variables declaration//GEN-END:variables
+
+    private void setUpButton() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
