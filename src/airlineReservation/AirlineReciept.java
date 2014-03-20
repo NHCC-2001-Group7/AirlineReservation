@@ -12,7 +12,7 @@ package airlineReservation;
  */
 public class AirlineReciept extends javax.swing.JFrame {
     
-    Customer customer = new Customer();
+    //Customer customer;
 
     /**
      * Creates new form AirlineReciept
@@ -20,7 +20,9 @@ public class AirlineReciept extends javax.swing.JFrame {
     public AirlineReciept() {
         initComponents();
         
-        nameLabel.setText(customer.getFirstName());
+        //firstNameLabel.setText(customer.getFirstName());
+        //lastNameLabel.setText(customer.getLastName());
+        //seatLabel.setText("");
         
     }
 
@@ -33,9 +35,10 @@ public class AirlineReciept extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        nameLabel = new javax.swing.JLabel();
+        firstNameLabel = new javax.swing.JLabel();
+        lastNameLabel = new javax.swing.JLabel();
         seatLabel = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Boarding Pass");
@@ -43,17 +46,21 @@ public class AirlineReciept extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(336, 284));
         getContentPane().setLayout(null);
 
-        nameLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        getContentPane().add(nameLabel);
-        nameLabel.setBounds(120, 80, 170, 20);
+        firstNameLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        getContentPane().add(firstNameLabel);
+        firstNameLabel.setBounds(120, 60, 70, 20);
+
+        lastNameLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        getContentPane().add(lastNameLabel);
+        lastNameLabel.setBounds(210, 60, 80, 0);
 
         seatLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         getContentPane().add(seatLabel);
-        seatLabel.setBounds(70, 120, 100, 20);
+        seatLabel.setBounds(70, 90, 100, 20);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/BoardingPass.jpg"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, -28, 400, 300);
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/BoardingPass.jpg"))); // NOI18N
+        getContentPane().add(background);
+        background.setBounds(0, -28, 400, 300);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -94,8 +101,9 @@ public class AirlineReciept extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel nameLabel;
+    private javax.swing.JLabel background;
+    private javax.swing.JLabel firstNameLabel;
+    private javax.swing.JLabel lastNameLabel;
     private javax.swing.JLabel seatLabel;
     // End of variables declaration//GEN-END:variables
 }
