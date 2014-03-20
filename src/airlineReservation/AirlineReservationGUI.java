@@ -244,14 +244,18 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         if(button1A.isSelected()){ //If button 1A is selected
             button1A.setIcon(airline.green); //Change button Icon to green
-            button1A.setSelected(true); //The Button can be selected again         
-      
+            button1A.setSelected(false); //The Button can be selected again         
+            
         }
-        
+        if(acceptButton.isSelected()){
+            
+            button1A.setIcon(airline.red);
+             button1A.setSelected(false);
+        }
         button1A.setBorder(null); 
         button1A.setFocusable(false);
         button1A.setRolloverIcon(null);
-
+        
         
     }//GEN-LAST:event_button1AActionPerformed
 
@@ -278,10 +282,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
             
             
-            button1A.setPressedIcon(airline.red);
            
             button1A.setIcon(airline.red);
-            button1A.setSelected(false);
+
+          
             
 
         
