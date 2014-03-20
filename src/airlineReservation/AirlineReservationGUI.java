@@ -282,6 +282,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1A.setFocusable(false);
         button1A.setRolloverIcon(null);
         
+        
+        //sets label text when button is pressed
+        selectSeatLabel.setText("1A");
+        
         //sets seat value when button is pressed
         seat = "1A";
         
