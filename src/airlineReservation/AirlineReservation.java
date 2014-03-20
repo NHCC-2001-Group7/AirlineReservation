@@ -34,6 +34,7 @@ package airlineReservation;
 import java.util.Random;
 import java.io.*;
 import javax.sound.sampled.*;
+import javax.swing.ImageIcon;
 
 
 public class AirlineReservation {
@@ -41,17 +42,12 @@ public class AirlineReservation {
     
     private boolean[] isTaken_FC = new boolean [7]; //create first class array
     private boolean[] isTaken_EC = new boolean [17]; //create economy class array
+    private ImageIcon[] seatImages = new ImageIcon[2];
     
+    ImageIcon red = new ImageIcon(getClass().getResource("images/red.png"));
+    ImageIcon green = new ImageIcon(getClass().getResource("images/green.png"));
+    ImageIcon white = new ImageIcon(getClass().getResource("images/white.png"));
     
-    private final Random rand = new Random();
-    
-    String image1 = "";
-    String image2 = "";
-    String image3 = "";
-    
-    private String[] seatImages = {image1, image2, image3}; //create seat images array
-    
-
 
     /**
      * Creates a constructor
@@ -63,10 +59,6 @@ public class AirlineReservation {
     
     public void selectFirstClass(int num){
         
-        for(int i=0; i<isTaken_FC.length;i++){
-            boolean red = Boolean.parseBoolean(image1); //convert string to boolean
-            isTaken_FC[i]=red; //sets default image for first class
-        }
         
         isTaken_FC[num] = true;
     }

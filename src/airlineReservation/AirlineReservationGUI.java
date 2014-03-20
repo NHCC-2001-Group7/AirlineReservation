@@ -1,6 +1,7 @@
 
 package airlineReservation;
 
+
 /**
  * @author: Mike Plucker, Billy Lam, Xavier Porter
  * Class: CSCI 2001-51
@@ -14,6 +15,9 @@ package airlineReservation;
 
 
 //import classes
+import javax.swing.ImageIcon;
+import java.io.*;
+
 
 public class AirlineReservationGUI extends javax.swing.JFrame {
     
@@ -216,7 +220,20 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_button3BActionPerformed
 
     private void button1AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1AActionPerformed
-        airline.selectFirstClass(0);
+                
+        
+        button1A.setIcon(airline.white); //Set default icon to white
+        
+        if(button1A.isSelected()){ //If button 1A is selected
+            button1A.setIcon(airline.green); //Change button Icon to green
+            button1A.setSelected(true); //The Button can be selected again         
+      
+        }
+        
+        button1A.setBorder(null); 
+        button1A.setFocusable(false);
+        button1A.setRolloverIcon(null);
+
         
     }//GEN-LAST:event_button1AActionPerformed
 
