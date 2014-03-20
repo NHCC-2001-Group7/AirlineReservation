@@ -207,19 +207,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         enterLastNameLabel.setBounds(160, 120, 90, 19);
 
         firstNameTextField.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        firstNameTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                firstNameTextFieldActionPerformed(evt);
-            }
-        });
         getContentPane().add(firstNameTextField);
         firstNameTextField.setBounds(26, 142, 110, 30);
-
-        lastNameTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lastNameTextFieldActionPerformed(evt);
-            }
-        });
         getContentPane().add(lastNameTextField);
         lastNameTextField.setBounds(160, 140, 120, 30);
 
@@ -290,16 +279,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         seat = "1A";
         
     }//GEN-LAST:event_button1AActionPerformed
-
-    private void firstNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameTextFieldActionPerformed
-        
-        
-    }//GEN-LAST:event_firstNameTextFieldActionPerformed
-
-    private void lastNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastNameTextFieldActionPerformed
-        
-       
-    }//GEN-LAST:event_lastNameTextFieldActionPerformed
 
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
             
