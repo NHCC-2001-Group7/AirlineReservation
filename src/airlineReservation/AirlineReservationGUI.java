@@ -202,6 +202,11 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
         acceptButton.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         acceptButton.setText("ACCEPT");
+        acceptButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                acceptButtonActionPerformed(evt);
+            }
+        });
         getContentPane().add(acceptButton);
         acceptButton.setBounds(60, 252, 174, 52);
 
@@ -238,6 +243,20 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private void firstNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameTextFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_firstNameTextFieldActionPerformed
+
+    private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
+            
+            
+            button1A.setPressedIcon(airline.red);
+           
+            button1A.setIcon(airline.red);
+            button1A.setSelected(false);
+            
+
+        
+        
+        
+    }//GEN-LAST:event_acceptButtonActionPerformed
 
     /**
      * @param args the command line arguments
