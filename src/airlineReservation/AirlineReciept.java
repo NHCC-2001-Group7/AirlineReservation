@@ -8,21 +8,21 @@ package airlineReservation;
 
 /**
  *
- * @author kb3242jb
+ * @author Mike Plucker, Billy Lam, Xavier Porter
  */
+
 public class AirlineReciept extends javax.swing.JFrame {
     
-    //Customer customer;
 
     /**
      * Creates new form AirlineReciept
      */
-    public AirlineReciept() {
+    public AirlineReciept(String firstName, String lastName, String seat) {
         initComponents();
         
-        //firstNameLabel.setText(customer.getFirstName());
-        //lastNameLabel.setText(customer.getLastName());
-        //seatLabel.setText("");
+        firstNameLabel.setText(firstName);
+        lastNameLabel.setText(lastName);
+        seatLabel.setText(seat);
         
     }
 
@@ -52,7 +52,7 @@ public class AirlineReciept extends javax.swing.JFrame {
 
         lastNameLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         getContentPane().add(lastNameLabel);
-        lastNameLabel.setBounds(210, 60, 80, 0);
+        lastNameLabel.setBounds(210, 60, 100, 20);
 
         seatLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         getContentPane().add(seatLabel);
@@ -95,7 +95,7 @@ public class AirlineReciept extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AirlineReciept().setVisible(true);
+                //new AirlineReciept().setVisible(true);
             }
         });
     }

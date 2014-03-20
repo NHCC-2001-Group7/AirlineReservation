@@ -28,12 +28,16 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     //declare customer object
     Customer customer;
     
+    //declare field variables
+    private String firstName, lastName, seat;
+    
 
     /**
      * Creates new form AirlineReservationGUI
      */
     public AirlineReservationGUI() {
         initComponents();
+        
     }
 
     /**
@@ -277,29 +281,20 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1A.setBorder(null); 
         button1A.setFocusable(false);
         button1A.setRolloverIcon(null);
-  
         
+        //sets seat value when button is pressed
+        seat = "1A";
         
     }//GEN-LAST:event_button1AActionPerformed
 
     private void firstNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameTextFieldActionPerformed
         
-        //declare local variable
-        String firstName;
         
-        firstName = firstNameTextField.getText(); //read string input from user and assign to variable
-        
-        customer.setFirstName(firstName);
     }//GEN-LAST:event_firstNameTextFieldActionPerformed
 
     private void lastNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastNameTextFieldActionPerformed
         
-        //declare local variable
-        String lastName;
-        
-        lastName = lastNameTextField.getText(); //read string input from user and assign to variable
-        
-        customer.setLastName(lastName);  
+       
     }//GEN-LAST:event_lastNameTextFieldActionPerformed
 
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
@@ -328,10 +323,16 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
              button2D.setIcon(airline.red);
              
              
-            
-
-        AirlineReciept receipt = new AirlineReciept();
-        receipt.setVisible(true);
+        
+        
+        firstName = firstNameTextField.getText(); //read string input from user and assign to variable
+        lastName = lastNameTextField.getText(); //read string input from user and assign to variable
+        
+        customer = new Customer(firstName, lastName); //initialize customer object
+        
+        //creates new AirlineReceipt object
+        AirlineReciept receipt = new AirlineReciept(customer.getFirstName(), customer.getLastName(), seat);
+        receipt.setVisible(true); //displays pop-up JFrame
         
         
         
