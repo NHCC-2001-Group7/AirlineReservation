@@ -81,6 +81,9 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         selectSeatLabel = new javax.swing.JLabel();
         acceptLabel = new javax.swing.JLabel();
         acceptButton = new javax.swing.JButton();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -225,6 +228,15 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         getContentPane().add(acceptButton);
         acceptButton.setBounds(60, 252, 174, 52);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/SeatingChart.jpg"))); // NOI18N
+        jTabbedPane1.addTab("Help", jLabel1);
+
+        jLabel2.setText("jLabel2");
+        jTabbedPane1.addTab("About", jLabel2);
+
+        getContentPane().add(jTabbedPane1);
+        jTabbedPane1.setBounds(10, 330, 210, 220);
+
         background.setBackground(new java.awt.Color(153, 255, 153));
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline 6.jpg"))); // NOI18N
         getContentPane().add(background);
@@ -360,6 +372,9 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private javax.swing.JLabel enterFirstNameLabel;
     private javax.swing.JLabel enterLastNameLabel;
     private javax.swing.JTextField firstNameTextField;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField lastNameTextField;
     private javax.swing.JLabel selectSeatLabel;
     // End of variables declaration//GEN-END:variables
