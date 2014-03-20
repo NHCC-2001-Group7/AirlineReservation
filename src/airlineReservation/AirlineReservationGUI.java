@@ -17,13 +17,14 @@ package airlineReservation;
 //import classes
 import javax.swing.ImageIcon;
 import java.io.*;
-
+import javax.swing.JToggleButton;
 
 public class AirlineReservationGUI extends javax.swing.JFrame {
     
     //create AirlineReservation object
     AirlineReservation airline = new AirlineReservation();
-    
+    JToggleButton[] buttons = new JToggleButton[5];
+   
     //declare customer object
     Customer customer;
     
@@ -110,10 +111,20 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1B.setBounds(366, 444, 48, 48);
 
         button1C.setText("1 C");
+        button1C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1CActionPerformed(evt);
+            }
+        });
         getContentPane().add(button1C);
         button1C.setBounds(458, 444, 48, 48);
 
         button1D.setText("1 D");
+        button1D.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1DActionPerformed(evt);
+            }
+        });
         getContentPane().add(button1D);
         button1D.setBounds(506, 444, 48, 48);
 
@@ -293,19 +304,44 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
             
-            
+
+
             if(acceptButton.isSelected()){ //If accept button is selected
-                button1A.setSelected(false);
+                button1A.setSelected(false); //Select button cannot be selected again
+                button1B.setSelected(false);
+                button1C.setSelected(false);
+                button1D.setSelected(false);
+                button2A.setSelected(false);
+                button2B.setSelected(false);
+                button2C.setSelected(false);
+                button2D.setSelected(false);
+                
             }
             
-             button1A.setIcon(airline.red);
- 
+             button1A.setIcon(airline.red); //Change icon to red
+             button1B.setIcon(airline.red);
+             button1C.setIcon(airline.red);
+             button1D.setIcon(airline.red);
+             button2A.setIcon(airline.red);
+             button2B.setIcon(airline.red);
+             button2C.setIcon(airline.red);
+             button2D.setIcon(airline.red);
+             
+             
             
 
         
         
         
     }//GEN-LAST:event_acceptButtonActionPerformed
+
+    private void button1CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1CActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button1CActionPerformed
+
+    private void button1DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1DActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button1DActionPerformed
 
     /**
      * @param args the command line arguments
