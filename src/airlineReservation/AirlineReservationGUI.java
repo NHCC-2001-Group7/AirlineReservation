@@ -75,7 +75,9 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button5E = new javax.swing.JToggleButton();
         button5F = new javax.swing.JToggleButton();
         enterFirstNameLabel = new javax.swing.JLabel();
+        enterLastNameLabel = new javax.swing.JLabel();
         firstNameTextField = new javax.swing.JTextField();
+        lastNameTextField = new javax.swing.JTextField();
         selectSeatLabel = new javax.swing.JLabel();
         acceptLabel = new javax.swing.JLabel();
         acceptButton = new javax.swing.JButton();
@@ -177,9 +179,14 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button5F.setBounds(522, 250, 36, 36);
 
         enterFirstNameLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        enterFirstNameLabel.setText("Please Enter Your Name");
+        enterFirstNameLabel.setText("First Name:");
         getContentPane().add(enterFirstNameLabel);
-        enterFirstNameLabel.setBounds(28, 118, 230, 26);
+        enterFirstNameLabel.setBounds(28, 118, 90, 26);
+
+        enterLastNameLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        enterLastNameLabel.setText("Last Name:");
+        getContentPane().add(enterLastNameLabel);
+        enterLastNameLabel.setBounds(160, 120, 90, 19);
 
         firstNameTextField.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         firstNameTextField.addActionListener(new java.awt.event.ActionListener() {
@@ -188,7 +195,15 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
             }
         });
         getContentPane().add(firstNameTextField);
-        firstNameTextField.setBounds(26, 142, 252, 30);
+        firstNameTextField.setBounds(26, 142, 110, 30);
+
+        lastNameTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lastNameTextFieldActionPerformed(evt);
+            }
+        });
+        getContentPane().add(lastNameTextField);
+        lastNameTextField.setBounds(160, 140, 120, 30);
 
         selectSeatLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         selectSeatLabel.setText("Please Choose a Seat on the Plane");
@@ -236,8 +251,24 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_button1AActionPerformed
 
     private void firstNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameTextFieldActionPerformed
-        // TODO add your handling code here:
+        
+        //declare local variable
+        String firstName;
+        
+        firstName = firstNameTextField.getText(); //read string input from user and assign to variable
+        
+        customer.setFirstName(firstName);
     }//GEN-LAST:event_firstNameTextFieldActionPerformed
+
+    private void lastNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastNameTextFieldActionPerformed
+        
+        //declare local variable
+        String lastName;
+        
+        lastName = lastNameTextField.getText(); //read string input from user and assign to variable
+        
+        customer.setLastName(lastName);  
+    }//GEN-LAST:event_lastNameTextFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -308,7 +339,9 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private javax.swing.JToggleButton button5E;
     private javax.swing.JToggleButton button5F;
     private javax.swing.JLabel enterFirstNameLabel;
+    private javax.swing.JLabel enterLastNameLabel;
     private javax.swing.JTextField firstNameTextField;
+    private javax.swing.JTextField lastNameTextField;
     private javax.swing.JLabel selectSeatLabel;
     // End of variables declaration//GEN-END:variables
 
