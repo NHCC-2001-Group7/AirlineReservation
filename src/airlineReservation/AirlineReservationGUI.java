@@ -294,6 +294,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
            
             button1A.setIcon(airline.red);
             button1A.setSelected(false);
+       
  
             
 
