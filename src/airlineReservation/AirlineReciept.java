@@ -39,6 +39,8 @@ public class AirlineReciept extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Boarding Pass");
+        setMaximumSize(new java.awt.Dimension(340, 280));
+        setMinimumSize(new java.awt.Dimension(336, 284));
         getContentPane().setLayout(null);
 
         nameLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
@@ -51,7 +53,7 @@ public class AirlineReciept extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/BoardingPass.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 400, 300);
+        jLabel1.setBounds(0, -28, 400, 300);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
