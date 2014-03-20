@@ -241,20 +241,17 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 
         
         button1A.setIcon(airline.white); //Set default icon to white
-        
-        if(button1A.isSelected()){ //If button 1A is selected
+
+       if(button1A.isSelected()){ //If button 1A is selected
             button1A.setIcon(airline.green); //Change button Icon to green
-            button1A.setSelected(false); //The Button can be selected again         
+            button1A.setSelected(false); //The Button cannot be selected again         
             
         }
-        if(acceptButton.isSelected()){
-            
-            button1A.setIcon(airline.red);
-             button1A.setSelected(false);
-        }
+
         button1A.setBorder(null); 
         button1A.setFocusable(false);
         button1A.setRolloverIcon(null);
+        button1A.setPressedIcon(airline.red);
         
         
     }//GEN-LAST:event_button1AActionPerformed
@@ -284,8 +281,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
             
            
             button1A.setIcon(airline.red);
-
-          
+            button1A.setSelected(false);
+ 
             
 
         
