@@ -89,6 +89,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1A.setIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/white.png"))); // NOI18N
         button1A.setText("1 A");
         button1A.setToolTipText("");
+        button1A.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         button1A.setRolloverEnabled(false);
         button1A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
