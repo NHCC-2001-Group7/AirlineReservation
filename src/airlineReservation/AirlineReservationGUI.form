@@ -357,7 +357,7 @@
           <Color blue="99" green="ff" red="99" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/ImageDisplay/Airline 14.jpg"/>
+          <Image iconType="3" name="/ImageDisplay/Airline 6.jpg"/>
         </Property>
       </Properties>
       <Constraints>

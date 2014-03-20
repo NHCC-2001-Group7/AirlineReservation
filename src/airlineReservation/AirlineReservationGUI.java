@@ -226,7 +226,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         acceptButton.setBounds(60, 252, 174, 52);
 
         background.setBackground(new java.awt.Color(153, 255, 153));
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline 14.jpg"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline 6.jpg"))); // NOI18N
         getContentPane().add(background);
         background.setBounds(0, -50, 740, 720);
 
