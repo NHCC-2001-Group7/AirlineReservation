@@ -19,11 +19,11 @@ public class Customer {
     
     
     //constructor with parameters
-    public Customer (String firstName, String lastName){
+    public Customer (){
         
         //initialize variables
-	this.firstName = firstName;
-	this.lastName = lastName;
+	//this.firstName = firstName;
+	//this.lastName = lastName;
     }
     
     //method to retrieve first name

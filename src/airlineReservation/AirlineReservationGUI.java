@@ -330,6 +330,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
              
             
 
+        AirlineReciept receipt = new AirlineReciept();
+        receipt.setVisible(true);
         
         
         
