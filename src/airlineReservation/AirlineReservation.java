@@ -53,6 +53,7 @@ public class AirlineReservation {
     final ImageIcon[] SEAT_IMAGES = {RED, GREEN, WHITE};
     
     
+    
     private boolean[] isTaken_FC = new boolean [FIRST_CLASS_SEATS]; //create first class array
     private boolean[] isTaken_EC = new boolean [ECONOMY_CLASS_SEATS]; //create economy class array
     

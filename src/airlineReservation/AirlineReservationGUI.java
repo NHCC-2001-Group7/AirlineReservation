@@ -18,6 +18,7 @@ package airlineReservation;
 
 //import classes
 import javax.swing.JToggleButton;
+import java.io.*;
 
 public class AirlineReservationGUI extends javax.swing.JFrame {
     
@@ -32,6 +33,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     
     //declare button array
     private JToggleButton[] buttons;
+    
+    
+    //create sound files
+    //private final File infinity = new File("infinity.wav");
     
 
     /**
@@ -326,6 +331,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         seat = savedSeats.toString(); //resets seat value
         
         selectSeatLabel.setText("Please Choose a Seat on the Plane"); //resets label text
+        
+        //airline.soundClip(infinity); //play sound clip
     }//GEN-LAST:event_acceptButtonActionPerformed
 
     private void button1BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1BActionPerformed
