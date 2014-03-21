@@ -32,7 +32,6 @@ package airlineReservation;
 
 
 //import classes
-import java.util.Random;
 import java.io.*;
 import javax.sound.sampled.*;
 import javax.swing.ImageIcon;

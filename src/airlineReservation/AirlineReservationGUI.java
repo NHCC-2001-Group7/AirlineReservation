@@ -17,8 +17,6 @@ package airlineReservation;
 
 
 //import classes
-import java.util.HashSet;
-import java.util.Set;
 import javax.swing.JToggleButton;
 
 public class AirlineReservationGUI extends javax.swing.JFrame {
@@ -282,13 +280,15 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         //if user selects button
         if(button1A.isSelected()){
             button1A.setIcon(airline.seatImages[1]); //change icon to green image
-            savedSeats.append(seatSelected); //add seat to string
+            savedSeats.append(seatSelected); //add seat to StringBuilder
         }
         else{ //user deselects button
             button1A.setIcon(airline.seatImages[2]); //return icon to default white image
+            
+            //remove seat from StringBuilder
             int i = savedSeats.indexOf(seatSelected); //finds the index that the seat's string first occurs
             if(i != -1){
-                savedSeats.delete(i, i + seatSelected.length()); //delete seat from string
+                savedSeats.delete(i, i + seatSelected.length()); //delete seat from StringBuilder
             }
         }
         
@@ -315,6 +315,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         AirlineReciept receipt = new AirlineReciept(customer.getFirstName(), customer.getLastName(), seat);
         receipt.setVisible(true); //displays pop-up JFrame 
         
+        
         //reset TextFields
         firstNameTextField.setText("");
         lastNameTextField.setText("");
@@ -322,6 +323,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         //reset StringBuilder
         int i = savedSeats.length(); //finds the length of the StringBuilder
         savedSeats.replace(0, i, "Seats: "); //replaces any seats selected
+        seat = savedSeats.toString(); //resets seat value
         
         selectSeatLabel.setText("Please Choose a Seat on the Plane"); //resets label text
     }//GEN-LAST:event_acceptButtonActionPerformed
@@ -334,13 +336,15 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         //if user selects button
         if(button1B.isSelected()){
             button1B.setIcon(airline.seatImages[1]); //change icon to green image
-            savedSeats.append(seatSelected); //add seat to string
+            savedSeats.append(seatSelected); //add seat to StringBuilder
         }
         else{ //user deselects button
             button1B.setIcon(airline.seatImages[2]); //return icon to default white image
+            
+            //remove seat from StringBuilder
             int i = savedSeats.indexOf(seatSelected); //finds the index that the seat's string first occurs
             if(i != -1){
-                savedSeats.delete(i, i + seatSelected.length()); //delete seat from string
+                savedSeats.delete(i, i + seatSelected.length()); //delete seat from StringBuilder
             }
         }
         
