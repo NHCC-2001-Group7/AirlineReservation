@@ -32,8 +32,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     //declare field variables
     private String firstName, lastName, seat;
     
-    
-    //JToggleButton[] buttons = new JToggleButton[5];
+    //declare button array
+    JToggleButton[] buttons;
     
 
     /**
@@ -42,7 +42,9 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     public AirlineReservationGUI() {
         initComponents();
         savedSeats.append("Seats: "); //adds initial string to StringBuilder
-        
+            
+        buttonArray(); //method to initialize button array (add buttons to array)
+        seatInitialize(); //method to add white image to all buttons
     }
 
     /**
@@ -101,7 +103,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(670, 656));
         getContentPane().setLayout(null);
 
-        button1A.setIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/white.png"))); // NOI18N
         button1A.setText("1 A");
         button1A.setToolTipText("");
         button1A.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/red.png"))); // NOI18N
@@ -115,7 +116,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         getContentPane().add(button1A);
         button1A.setBounds(316, 444, 48, 48);
 
-        button1B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/white.png"))); // NOI18N
         button1B.setText("1 B");
         button1B.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/red.png"))); // NOI18N
         button1B.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -253,7 +253,24 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    //method to initialize button array
+    private void buttonArray(){
+        
+        //adds buttons to button array
+        buttons = new JToggleButton[] {button1A, button1B, button1C, button1D, button2A, button2B, button2C, button2D, 
+        button3A, button3B, button3C, button3D, button3E, button3F, button4A, button4B, button4C, button4D, button4E,
+        button4F, button5A, button5B, button5C, button5D, button5E, button5F};
+    }
+    
+    //method to add white image to all seats
+    private void seatInitialize(){
+        
+        for(int i=0; i < buttons.length; i++){
+            buttons[i].setIcon(airline.seatImages[2]);
+        }
+    }
+    
     private void button1AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1AActionPerformed
         
         //declare local variable

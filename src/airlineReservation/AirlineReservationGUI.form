@@ -31,9 +31,6 @@
   <SubComponents>
     <Component class="javax.swing.JToggleButton" name="button1A">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/airlineReservation/images/white.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="1 A"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -53,9 +50,6 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="button1B">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/airlineReservation/images/white.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="1 B"/>
         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/airlineReservation/images/red.png"/>
