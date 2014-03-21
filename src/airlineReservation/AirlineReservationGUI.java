@@ -23,13 +23,15 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     
     //create AirlineReservation object
     AirlineReservation airline = new AirlineReservation();
-    JToggleButton[] buttons = new JToggleButton[5];
-   
+    
     //declare customer object
     Customer customer;
     
     //declare field variables
     private String firstName, lastName, seat;
+    
+    
+    JToggleButton[] buttons = new JToggleButton[5];
     
 
     /**
