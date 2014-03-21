@@ -105,7 +105,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
         button1A.setText("1 A");
         button1A.setToolTipText("");
-        button1A.setRolloverEnabled(false);
         button1A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 button1AActionPerformed(evt);
@@ -115,7 +114,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1A.setBounds(316, 444, 48, 48);
 
         button1B.setText("1 B");
-        button1B.setRolloverEnabled(false);
         button1B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 button1BActionPerformed(evt);
@@ -260,7 +258,20 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         for(JToggleButton element: buttons){
             element.setIcon(airline.seatImages[2]); //sets all button icons to white image
             element.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER); //sets text to center instead of trailing
+            //element.setRolloverIcon(null);
+            //element.setFocusable(false);
+            //element.setBorder(null);
         }
+    }
+    
+    //method that converts StringBuilder toString and applys it
+    private void applyStringBuilder(){
+        
+        //sets label text
+        selectSeatLabel.setText(savedSeats.toString());
+        
+        //sets seat value
+        seat = savedSeats.toString();
     }
     
     private void button1AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1AActionPerformed
@@ -281,15 +292,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
             }
         }
         
-        //sets label text when button is pressed
-        selectSeatLabel.setText(savedSeats.toString());
-        
-        //sets seat value when button is pressed
-        seat = savedSeats.toString();
-        
-        button1A.setBorder(null); 
-        button1A.setFocusable(false);
-        button1A.setRolloverIcon(null);
+        applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
     }//GEN-LAST:event_button1AActionPerformed
 
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
@@ -341,15 +344,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
             }
         }
         
-        //sets label text when button is pressed
-        selectSeatLabel.setText(savedSeats.toString());
-        
-        //sets seat value when button is pressed
-        seat = savedSeats.toString();
-        
-        button1A.setBorder(null); 
-        button1A.setFocusable(false);
-        button1A.setRolloverIcon(null); 
+        applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
     }//GEN-LAST:event_button1BActionPerformed
 
     /**
