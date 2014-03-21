@@ -44,7 +44,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         savedSeats.append("Seats: "); //adds initial string to StringBuilder
             
         buttonArray(); //method to initialize button array (add buttons to array)
-        seatInitialize(); //method to add white image to all buttons
+        initialButtonColor(); //method to add white image to all buttons
     }
 
     /**
@@ -264,7 +264,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     }
     
     //method to add white image to all seats
-    private void seatInitialize(){
+    private void initialButtonColor(){
         
         //enhanced for loop
         for(JToggleButton element: buttons){
