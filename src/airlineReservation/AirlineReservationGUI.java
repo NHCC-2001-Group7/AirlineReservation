@@ -110,11 +110,13 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1A.setBounds(316, 444, 48, 48);
 
         button1B.setText("1 B");
+        button1B.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         button1B.setRolloverEnabled(false);
         getContentPane().add(button1B);
         button1B.setBounds(366, 444, 48, 48);
 
         button1C.setText("1 C");
+        button1C.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         button1C.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 button1CActionPerformed(evt);
@@ -124,6 +126,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1C.setBounds(458, 444, 48, 48);
 
         button1D.setText("1 D");
+        button1D.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         button1D.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 button1DActionPerformed(evt);
@@ -133,18 +136,22 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1D.setBounds(506, 444, 48, 48);
 
         button2A.setText("2 A");
+        button2A.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(button2A);
         button2A.setBounds(316, 394, 48, 48);
 
         button2B.setText("2 B");
+        button2B.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(button2B);
         button2B.setBounds(366, 394, 48, 48);
 
         button2C.setText("2 C");
+        button2C.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(button2C);
         button2C.setBounds(458, 394, 48, 48);
 
         button2D.setText("2 D");
+        button2D.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(button2D);
         button2D.setBounds(506, 394, 48, 48);
         getContentPane().add(button3A);
