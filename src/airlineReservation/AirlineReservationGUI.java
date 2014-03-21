@@ -266,8 +266,9 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     //method to add white image to all seats
     private void seatInitialize(){
         
-        for(int i=0; i < buttons.length; i++){
-            buttons[i].setIcon(airline.seatImages[2]);
+        //enhanced for loop
+        for(JToggleButton element: buttons){
+            element.setIcon(airline.seatImages[2]); //sets all button icons to white image
         }
     }
     
