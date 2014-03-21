@@ -33,10 +33,6 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="1 A"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
-        <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/airlineReservation/images/red.png"/>
-        </Property>
-        <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
@@ -51,10 +47,6 @@
     <Component class="javax.swing.JToggleButton" name="button1B">
       <Properties>
         <Property name="text" type="java.lang.String" value="1 B"/>
-        <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/airlineReservation/images/red.png"/>
-        </Property>
-        <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
@@ -69,7 +61,6 @@
     <Component class="javax.swing.JToggleButton" name="button1C">
       <Properties>
         <Property name="text" type="java.lang.String" value="1 C"/>
-        <Property name="horizontalTextPosition" type="int" value="0"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -80,7 +71,6 @@
     <Component class="javax.swing.JToggleButton" name="button1D">
       <Properties>
         <Property name="text" type="java.lang.String" value="1 D"/>
-        <Property name="horizontalTextPosition" type="int" value="0"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -91,7 +81,6 @@
     <Component class="javax.swing.JToggleButton" name="button2A">
       <Properties>
         <Property name="text" type="java.lang.String" value="2 A"/>
-        <Property name="horizontalTextPosition" type="int" value="0"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -102,7 +91,6 @@
     <Component class="javax.swing.JToggleButton" name="button2B">
       <Properties>
         <Property name="text" type="java.lang.String" value="2 B"/>
-        <Property name="horizontalTextPosition" type="int" value="0"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -113,7 +101,6 @@
     <Component class="javax.swing.JToggleButton" name="button2C">
       <Properties>
         <Property name="text" type="java.lang.String" value="2 C"/>
-        <Property name="horizontalTextPosition" type="int" value="0"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -124,7 +111,6 @@
     <Component class="javax.swing.JToggleButton" name="button2D">
       <Properties>
         <Property name="text" type="java.lang.String" value="2 D"/>
-        <Property name="horizontalTextPosition" type="int" value="0"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

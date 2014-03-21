@@ -44,9 +44,9 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         savedSeats.append("Seats: "); //adds initial string to StringBuilder
             
         buttonArray(); //method to initialize button array (add buttons to array)
-        initialButtonColor(); //method to add white image to all buttons
+        setupButtons(); //method to setup buttons
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -105,8 +105,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
         button1A.setText("1 A");
         button1A.setToolTipText("");
-        button1A.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/red.png"))); // NOI18N
-        button1A.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         button1A.setRolloverEnabled(false);
         button1A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,8 +115,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1A.setBounds(316, 444, 48, 48);
 
         button1B.setText("1 B");
-        button1B.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/red.png"))); // NOI18N
-        button1B.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         button1B.setRolloverEnabled(false);
         button1B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,32 +125,26 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1B.setBounds(366, 444, 48, 48);
 
         button1C.setText("1 C");
-        button1C.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(button1C);
         button1C.setBounds(458, 444, 48, 48);
 
         button1D.setText("1 D");
-        button1D.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(button1D);
         button1D.setBounds(506, 444, 48, 48);
 
         button2A.setText("2 A");
-        button2A.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(button2A);
         button2A.setBounds(316, 394, 48, 48);
 
         button2B.setText("2 B");
-        button2B.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(button2B);
         button2B.setBounds(366, 394, 48, 48);
 
         button2C.setText("2 C");
-        button2C.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(button2C);
         button2C.setBounds(458, 394, 48, 48);
 
         button2D.setText("2 D");
-        button2D.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(button2D);
         button2D.setBounds(506, 394, 48, 48);
         getContentPane().add(button3A);
@@ -263,12 +253,13 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button4F, button5A, button5B, button5C, button5D, button5E, button5F};
     }
     
-    //method to add white image to all seats
-    private void initialButtonColor(){
+    //method to setup buttons
+    private void setupButtons(){
         
-        //enhanced for loop
+        //enhanced for loop will act on all buttons
         for(JToggleButton element: buttons){
             element.setIcon(airline.seatImages[2]); //sets all button icons to white image
+            element.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER); //sets text to center instead of trailing
         }
     }
     
@@ -303,16 +294,13 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
         
-        //disables button if it has been selected
-        if(button1A.isSelected()){    
-            button1A.setEnabled(false);
-        }   
-            
-        //disables button if it has been selected
-        if(button1B.isSelected()){    
-            button1B.setEnabled(false);
-        }   
-        
+        //enhanced for loop that disables buttons if they have been selected
+        for(JToggleButton element: buttons){
+            if(element.isSelected()){ //if a button has been selected
+                element.setDisabledIcon(airline.seatImages[0]); //sets disabled icon to red image
+                element.setEnabled(false); //disable button
+            }
+        }
         
         
         firstName = firstNameTextField.getText(); //read string input from user and assign to variable
