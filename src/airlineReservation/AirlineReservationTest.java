@@ -9,6 +9,14 @@ package airlineReservation;
 /**
  *
  * @author Mike Plucker, Billy Lam, Xavier Porter
+ * Class: CSCI 2001-51
+ * Due Date: 03/31/14
+ * 
+ * Version 1.00
+ * 
+ * 
+ * This is the main method that runs the program.
+ * 
  */
 
 

@@ -3,6 +3,7 @@ package airlineReservation;
 
 
 /**
+ * 
  * @author: Mike Plucker, Billy Lam, Xavier Porter
  * Class: CSCI 2001-51
  * Due Date: 03/31/14
@@ -10,7 +11,8 @@ package airlineReservation;
  * Version: 1.00
  * 
  * 
- * Generates the GUI for the MathGame
+ * This class generates the main GUI for the program.
+ * 
  */
 
 

@@ -13,6 +13,7 @@ package airlineReservation;
  * Due Date: 03/31/14
  * 
  * Version 1.00
+ * 
  * Objective: A small airline has just purchased a computer for its new automated reservations system. 
  * You’ve been asked to develop the new system.You’re to write an application to assign seats on each flight of the airline’s only plane (capacity: 10 seats).
  * 
