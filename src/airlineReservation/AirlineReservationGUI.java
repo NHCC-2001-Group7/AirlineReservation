@@ -315,10 +315,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         //creates new AirlineReceipt object
         AirlineReciept receipt = new AirlineReciept(customer.getFirstName(), customer.getLastName(), seat);
-        receipt.setVisible(true); //displays pop-up JFrame
-        
-        
-        
+        receipt.setVisible(true); //displays pop-up JFrame 
     }//GEN-LAST:event_acceptButtonActionPerformed
 
     private void button1CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1CActionPerformed

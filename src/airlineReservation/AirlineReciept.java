@@ -13,7 +13,7 @@ package airlineReservation;
 
 public class AirlineReciept extends javax.swing.JFrame {
     
-
+    
     /**
      * Creates new form AirlineReciept
      */
@@ -23,7 +23,6 @@ public class AirlineReciept extends javax.swing.JFrame {
         firstNameLabel.setText(firstName);
         lastNameLabel.setText(lastName);
         seatLabel.setText(seat);
-        
     }
 
     /**
@@ -40,7 +39,6 @@ public class AirlineReciept extends javax.swing.JFrame {
         seatLabel = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Boarding Pass");
         setMaximumSize(new java.awt.Dimension(340, 280));
         setMinimumSize(new java.awt.Dimension(336, 284));
@@ -95,7 +93,7 @@ public class AirlineReciept extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                //new AirlineReciept().setVisible(true);
+                //new AirlineReciept().setVisible(true);   
             }
         });
     }
