@@ -273,7 +273,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         
         //sets label text when button is pressed
-        selectSeatLabel.setText("1A");
+        selectSeatLabel.setText("Seat: 1A");
         
         //sets seat value when button is pressed
         seat = "1A";
