@@ -39,16 +39,24 @@ import javax.swing.ImageIcon;
 
 public class AirlineReservation {
     
+    //declare constants
+    private final int FIRST_CLASS_SEATS = 7;
+    private final int ECONOMY_CLASS_SEATS = 17;
     
-    private boolean[] isTaken_FC = new boolean [7]; //create first class array
-    private boolean[] isTaken_EC = new boolean [17]; //create economy class array
-    private ImageIcon[] seatImages = new ImageIcon[2];
     
-    ImageIcon red = new ImageIcon(getClass().getResource("images/red.png"));
-    ImageIcon green = new ImageIcon(getClass().getResource("images/green.png"));
-    ImageIcon white = new ImageIcon(getClass().getResource("images/white.png"));
+    private boolean[] isTaken_FC = new boolean [FIRST_CLASS_SEATS]; //create first class array
+    private boolean[] isTaken_EC = new boolean [ECONOMY_CLASS_SEATS]; //create economy class array
+    //private ImageIcon[] seatImages = new ImageIcon[2];
     
-
+    
+    //create image files
+    private ImageIcon red = new ImageIcon(getClass().getResource("images/red.png"));
+    private ImageIcon green = new ImageIcon(getClass().getResource("images/green.png"));
+    private ImageIcon white = new ImageIcon(getClass().getResource("images/white.png"));
+    
+    private ImageIcon[] seatImages = {red, green, white}; //create seatImages array
+    
+    
     /**
      * Creates a constructor
      */
