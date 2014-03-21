@@ -44,17 +44,17 @@ public class AirlineReservation {
     private final int ECONOMY_CLASS_SEATS = 17;
     
     
+    //create image files
+    private final ImageIcon RED = new ImageIcon(getClass().getResource("images/red.png"));
+    private final ImageIcon GREEN = new ImageIcon(getClass().getResource("images/green.png"));
+    private final ImageIcon WHITE = new ImageIcon(getClass().getResource("images/white.png"));
+    
+    //create seatImages array
+    final ImageIcon[] SEAT_IMAGES = {RED, GREEN, WHITE};
+    
+    
     private boolean[] isTaken_FC = new boolean [FIRST_CLASS_SEATS]; //create first class array
     private boolean[] isTaken_EC = new boolean [ECONOMY_CLASS_SEATS]; //create economy class array
-    //private ImageIcon[] seatImages = new ImageIcon[2];
-    
-    
-    //create image files
-    ImageIcon red = new ImageIcon(getClass().getResource("images/red.png"));
-    ImageIcon green = new ImageIcon(getClass().getResource("images/green.png"));
-    ImageIcon white = new ImageIcon(getClass().getResource("images/white.png"));
-    
-    ImageIcon[] seatImages = {red, green, white}; //create seatImages array
     
     
     /**
@@ -65,16 +65,16 @@ public class AirlineReservation {
     }
 
     
-    public void selectFirstClass(int num){
-        
-        
-        isTaken_FC[num] = true;
-    }
-    
-    public void selectEconomyClass(int num){
-        
-        isTaken_EC[num] = true;
-    }
+//    public void selectFirstClass(int num){
+//        
+//        
+//        isTaken_FC[num] = true;
+//    }
+//    
+//    public void selectEconomyClass(int num){
+//        
+//        isTaken_EC[num] = true;
+//    }
 
     
 

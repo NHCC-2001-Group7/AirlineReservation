@@ -22,16 +22,16 @@ import javax.swing.JToggleButton;
 public class AirlineReservationGUI extends javax.swing.JFrame {
     
     //create objects
-    AirlineReservation airline = new AirlineReservation();
-    StringBuilder savedSeats = new StringBuilder();
-    Customer customer; //declare customer object
+    private AirlineReservation airline = new AirlineReservation();
+    private StringBuilder savedSeats = new StringBuilder();
+    private Customer customer; //declare customer object
     
     
     //declare field variables
     private String firstName, lastName, seat;
     
     //declare button array
-    JToggleButton[] buttons;
+    private JToggleButton[] buttons;
     
 
     /**
@@ -254,7 +254,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         //enhanced for loop will act on all buttons
         for(JToggleButton element: buttons){
-            element.setIcon(airline.seatImages[2]); //sets all button icons to white image
+            element.setIcon(airline.SEAT_IMAGES[2]); //sets all button icons to white image
             element.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER); //sets text to center instead of trailing
             //element.setRolloverIcon(null);
             //element.setFocusable(false);
@@ -279,11 +279,11 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         //if user selects button
         if(button1A.isSelected()){
-            button1A.setIcon(airline.seatImages[1]); //change icon to green image
+            button1A.setIcon(airline.SEAT_IMAGES[1]); //change icon to green image
             savedSeats.append(seatSelected); //add seat to StringBuilder
         }
         else{ //user deselects button
-            button1A.setIcon(airline.seatImages[2]); //return icon to default white image
+            button1A.setIcon(airline.SEAT_IMAGES[2]); //return icon to default white image
             
             //remove seat from StringBuilder
             int i = savedSeats.indexOf(seatSelected); //finds the index that the seat's string first occurs
@@ -300,7 +300,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         //enhanced for loop that disables buttons if they have been selected
         for(JToggleButton element: buttons){
             if(element.isSelected()){ //if a button has been selected
-                element.setDisabledIcon(airline.seatImages[0]); //sets disabled icon to red image
+                element.setDisabledIcon(airline.SEAT_IMAGES[0]); //sets disabled icon to red image
                 element.setEnabled(false); //disable button
             }
         }
@@ -335,11 +335,11 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         //if user selects button
         if(button1B.isSelected()){
-            button1B.setIcon(airline.seatImages[1]); //change icon to green image
+            button1B.setIcon(airline.SEAT_IMAGES[1]); //change icon to green image
             savedSeats.append(seatSelected); //add seat to StringBuilder
         }
         else{ //user deselects button
-            button1B.setIcon(airline.seatImages[2]); //return icon to default white image
+            button1B.setIcon(airline.SEAT_IMAGES[2]); //return icon to default white image
             
             //remove seat from StringBuilder
             int i = savedSeats.indexOf(seatSelected); //finds the index that the seat's string first occurs
