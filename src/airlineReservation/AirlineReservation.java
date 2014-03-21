@@ -82,7 +82,7 @@ public class AirlineReservation {
      *
      * @param soundFile method that creates the soundClip and plays the soundFile
      */
-        public void soundClip(File soundFile){
+    public void soundClip(File soundFile){
         
         try{
             AudioInputStream audio = AudioSystem.getAudioInputStream(soundFile); //open an audio input stream
@@ -92,9 +92,7 @@ public class AirlineReservation {
         }catch(  UnsupportedAudioFileException | IOException | LineUnavailableException uae){
             System.out.println(uae);
         }  
-    }
-
-       
+    }      
 }
 
 
