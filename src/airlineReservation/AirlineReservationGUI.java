@@ -101,6 +101,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button1A.setIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/white.png"))); // NOI18N
         button1A.setText("1 A");
         button1A.setToolTipText("");
+        button1A.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/red.png"))); // NOI18N
         button1A.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         button1A.setRolloverEnabled(false);
         button1A.addActionListener(new java.awt.event.ActionListener() {
@@ -111,29 +112,26 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         getContentPane().add(button1A);
         button1A.setBounds(316, 444, 48, 48);
 
+        button1B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/white.png"))); // NOI18N
         button1B.setText("1 B");
+        button1B.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/red.png"))); // NOI18N
         button1B.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         button1B.setRolloverEnabled(false);
+        button1B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1BActionPerformed(evt);
+            }
+        });
         getContentPane().add(button1B);
         button1B.setBounds(366, 444, 48, 48);
 
         button1C.setText("1 C");
         button1C.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        button1C.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button1CActionPerformed(evt);
-            }
-        });
         getContentPane().add(button1C);
         button1C.setBounds(458, 444, 48, 48);
 
         button1D.setText("1 D");
         button1D.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        button1D.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button1DActionPerformed(evt);
-            }
-        });
         getContentPane().add(button1D);
         button1D.setBounds(506, 444, 48, 48);
 
@@ -158,12 +156,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button2D.setBounds(506, 394, 48, 48);
         getContentPane().add(button3A);
         button3A.setBounds(312, 321, 36, 36);
-
-        button3B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button3BActionPerformed(evt);
-            }
-        });
         getContentPane().add(button3B);
         button3B.setBounds(348, 320, 36, 38);
         getContentPane().add(button3C);
@@ -259,22 +251,24 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void button3BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3BActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button3BActionPerformed
-
     private void button1AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1AActionPerformed
-                
+        
+        if(button1A.isSelected()){
+            button1A.setIcon(airline.seatImages[1]);
+        }
+        else{
+            button1A.setIcon(airline.seatImages[2]);
+        }
         
        
-        if(acceptButton.isSelected()){
-            button1A.setSelected(false);
-            }
-        else if(button1A.isSelected()){ //If button 1A is selected
-            button1A.setIcon(airline.red); //Change button Icon to green
-            button1A.setSelected(false); //The Button cannot be selected again         
-            
-        }
+//        if(acceptButton.isSelected()){
+//            button1A.setSelected(false);
+//            }
+//        else if(button1A.isSelected()){ //If button 1A is selected
+//            button1A.setIcon(airline.seatImages[1]); //Change button Icon to green
+//            button1A.setSelected(false); //The Button cannot be selected again         
+//            
+//        }
 
         button1A.setBorder(null); 
         button1A.setFocusable(false);
@@ -290,31 +284,18 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_button1AActionPerformed
 
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
+        
+        //disables button if it has been selected
+        if(button1A.isSelected()){    
+            button1A.setEnabled(false);
+        }   
             
-
-
-            if(acceptButton.isSelected()){ //If accept button is selected
-                button1A.setSelected(false); //Select button cannot be selected again
-                button1B.setSelected(false);
-                button1C.setSelected(false);
-                button1D.setSelected(false);
-                button2A.setSelected(false);
-                button2B.setSelected(false);
-                button2C.setSelected(false);
-                button2D.setSelected(false);
-                
-            }
-            
-             button1A.setIcon(airline.red); //Change icon to red
-             button1B.setIcon(airline.red);
-             button1C.setIcon(airline.red);
-             button1D.setIcon(airline.red);
-             button2A.setIcon(airline.red);
-             button2B.setIcon(airline.red);
-             button2C.setIcon(airline.red);
-             button2D.setIcon(airline.red);
-             
-             
+        //disables button if it has been selected
+        if(button1B.isSelected()){    
+            button1B.setEnabled(false);
+        }   
+        
+        
         
         
         firstName = firstNameTextField.getText(); //read string input from user and assign to variable
@@ -327,13 +308,26 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         receipt.setVisible(true); //displays pop-up JFrame 
     }//GEN-LAST:event_acceptButtonActionPerformed
 
-    private void button1CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1CActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button1CActionPerformed
-
-    private void button1DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1DActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button1DActionPerformed
+    private void button1BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1BActionPerformed
+        
+        if(button1B.isSelected()){
+            button1B.setIcon(airline.seatImages[1]);
+        }
+        else{
+            button1B.setIcon(airline.seatImages[2]);
+        }
+        
+        //sets label text when button is pressed
+        selectSeatLabel.setText("Seat: 1B");
+        
+        //sets seat value when button is pressed
+        seat = "1B";
+        
+        button1A.setBorder(null); 
+        button1A.setFocusable(false);
+        button1A.setRolloverIcon(null);
+        
+    }//GEN-LAST:event_button1BActionPerformed
 
     /**
      * @param args the command line arguments

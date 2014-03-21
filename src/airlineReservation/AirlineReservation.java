@@ -54,7 +54,7 @@ public class AirlineReservation {
     ImageIcon green = new ImageIcon(getClass().getResource("images/green.png"));
     ImageIcon white = new ImageIcon(getClass().getResource("images/white.png"));
     
-    private ImageIcon[] seatImages = {red, green, white}; //create seatImages array
+    ImageIcon[] seatImages = {red, green, white}; //create seatImages array
     
     
     /**
