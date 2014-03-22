@@ -49,7 +49,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
             
         buttonArray(); //method to initialize button array (add buttons to array)
         setupButtons(); //method to setup buttons
-        seatNumberArray(); //method to initialize seatButton array (add seat numbers to array)
+        seatNumberArray(); //method to initialize seatNumber array (add seat numbers to array)
     }
     
     /**
@@ -399,6 +399,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         for(JToggleButton element: buttons){
             element.setIcon(airline.SEAT_IMAGES[2]); //sets all button icons to white image
             element.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER); //sets text to center instead of trailing
+            //element.
             //element.setRolloverIcon(null);
             //element.setFocusable(false);
             //element.setBorder(null);
@@ -413,15 +414,15 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         "4A", "4B", "4C", "4D", "4E", "4F", "5A", "5B", "5C", "5D", "5E", "5F"};
     }
     
-    //method that converts StringBuilder toString and applys it
-    private void applyStringBuilder(){
-        
-        //sets label text
-        selectSeatLabel.setText(savedSeats.toString());
-        
-        //sets seat value
-        seat = savedSeats.toString();
-    } 
+//    //method that converts StringBuilder toString and applys it
+//    private void applyStringBuilder(){
+//        
+//        //sets label text
+//        selectSeatLabel.setText(savedSeats.toString());
+//        
+//        //sets seat value
+//        seat = savedSeats.toString();
+//    } 
     
     //this is just a backup for button1AActionPerformed...ignore for now
     private void ignoreMe(){
@@ -500,8 +501,16 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 }
             }
             
-            applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
+            //applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
         }
+        
+        //sets label text
+        selectSeatLabel.setText(savedSeats.toString());
+        
+        //sets seat value
+        seat = savedSeats.toString();
+        
+        //applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
     }//GEN-LAST:event_actionPerformed
 
     /**
