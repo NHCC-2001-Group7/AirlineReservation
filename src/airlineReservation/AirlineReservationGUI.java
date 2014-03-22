@@ -180,46 +180,152 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         });
         getContentPane().add(button2D);
         button2D.setBounds(506, 394, 48, 48);
+
+        button3A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button3A);
         button3A.setBounds(312, 321, 36, 36);
+
+        button3B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button3B);
         button3B.setBounds(348, 320, 36, 38);
+
+        button3C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button3C);
         button3C.setBounds(384, 320, 36, 38);
+
+        button3D.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button3D);
         button3D.setBounds(450, 320, 36, 36);
+
+        button3E.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button3E);
         button3E.setBounds(486, 320, 36, 36);
+
+        button3F.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button3F);
         button3F.setBounds(522, 320, 36, 36);
+
+        button4A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button4A);
         button4A.setBounds(312, 286, 36, 36);
+
+        button4B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button4B);
         button4B.setBounds(348, 286, 36, 36);
+
+        button4C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button4C);
         button4C.setBounds(384, 286, 36, 36);
+
+        button4D.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button4D);
         button4D.setBounds(450, 284, 36, 36);
+
+        button4E.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button4E);
         button4E.setBounds(486, 284, 36, 36);
+
+        button4F.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button4F);
         button4F.setBounds(522, 284, 36, 36);
 
         button5A.setBorderPainted(false);
         button5A.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         button5A.setRolloverEnabled(false);
+        button5A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button5A);
         button5A.setBounds(312, 250, 36, 36);
 
         button5B.setRolloverEnabled(false);
+        button5B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button5B);
         button5B.setBounds(348, 250, 36, 36);
+
+        button5C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button5C);
         button5C.setBounds(384, 250, 36, 36);
+
+        button5D.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button5D);
         button5D.setBounds(450, 250, 36, 36);
+
+        button5E.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button5E);
         button5E.setBounds(486, 250, 36, 36);
+
+        button5F.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AirlineReservationGUI.this.actionPerformed(evt);
+            }
+        });
         getContentPane().add(button5F);
         button5F.setBounds(522, 250, 36, 36);
 
