@@ -367,7 +367,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         getContentPane().add(acceptButton);
         acceptButton.setBounds(60, 252, 174, 52);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/SeatingChart3.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/SeatingChart4.jpg"))); // NOI18N
         jTabbedPane1.addTab("Help", jLabel1);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/About.jpg"))); // NOI18N
