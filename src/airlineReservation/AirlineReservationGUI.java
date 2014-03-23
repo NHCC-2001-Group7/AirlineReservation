@@ -353,6 +353,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         selectSeatLabel.setBounds(28, 178, 248, 34);
 
         acceptLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        acceptLabel.setText("and then Hit Accept");
         getContentPane().add(acceptLabel);
         acceptLabel.setBounds(28, 214, 242, 28);
 
