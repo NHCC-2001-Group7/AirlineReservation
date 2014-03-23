@@ -489,6 +489,12 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         for(int i = 0; i < buttons.length; i++){
             if(buttons[i].isSelected()){ //if user selects a button
                 buttons[i].setIcon(airline.SEAT_IMAGES[1]); //change button's icon to green image
+                
+                int j = savedSeats.indexOf(seatNumbers[i]); //finds the index that the seat's string first occurs
+                if(j != -1){
+                    savedSeats.delete(j, j + seatNumbers[i].length()); //Clears previous text so line 498 text doesn't build up
+                }
+                
                 savedSeats.append(seatNumbers[i]); //add seat to StringBuilder (get string from seatNumber array)
             }
             else{ //user deselects button
