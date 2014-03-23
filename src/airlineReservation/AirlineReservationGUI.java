@@ -410,8 +410,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private void seatNumberArray(){
         
         //adds seat numbers to array
-        seatNumbers = new String[] {"1A", "1B", "1C", "1D", "2A", "2B", "2C", "2D", "3A", "3B", "3C", "3D", "3E", "3F",
-        "4A", "4B", "4C", "4D", "4E", "4F", "5A", "5B", "5C", "5D", "5E", "5F"};
+        seatNumbers = new String[] {"1A ", "1B ", "1C ", "1D ", "2A ", "2B ", "2C ", "2D ", "3A ", "3B ", "3C ", "3D ", "3E ", "3F ",
+        "4A ", "4B ", "4C ", "4D ", "4E ", "4F ", "5A ", "5B ", "5C ", "5D ", "5E ", "5F "};
     }
     
 //    //method that converts StringBuilder toString and applys it
