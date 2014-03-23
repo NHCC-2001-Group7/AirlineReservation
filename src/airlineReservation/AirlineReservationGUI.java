@@ -101,6 +101,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        firstClassLabel = new javax.swing.JLabel();
+        economyClassLabel = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -351,7 +353,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         selectSeatLabel.setBounds(28, 178, 248, 34);
 
         acceptLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        acceptLabel.setText("Hit Accept");
         getContentPane().add(acceptLabel);
         acceptLabel.setBounds(28, 214, 242, 28);
 
@@ -374,6 +375,18 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
         getContentPane().add(jTabbedPane1);
         jTabbedPane1.setBounds(14, 334, 194, 210);
+
+        firstClassLabel.setFont(new java.awt.Font("Serif", 1, 22)); // NOI18N
+        firstClassLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        firstClassLabel.setText("First Class");
+        getContentPane().add(firstClassLabel);
+        firstClassLabel.setBounds(316, 366, 236, 24);
+
+        economyClassLabel.setFont(new java.awt.Font("Serif", 1, 16)); // NOI18N
+        economyClassLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        economyClassLabel.setText("Economy Class");
+        getContentPane().add(economyClassLabel);
+        economyClassLabel.setBounds(350, 226, 170, 20);
 
         background.setBackground(new java.awt.Color(153, 255, 153));
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline 6.jpg"))); // NOI18N
@@ -496,6 +509,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 }
                 
                 savedSeats.append(seatNumbers[i]); //add seat to StringBuilder (get string from seatNumber array)
+                acceptLabel.setText("Hit Accept"); //Makes "Hit Accept" text appear after a seat has been selected
             }
             else{ //user deselects button
                 buttons[i].setIcon(airline.SEAT_IMAGES[2]); //return button's icon to default white image
@@ -587,8 +601,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private javax.swing.JToggleButton button5D;
     private javax.swing.JToggleButton button5E;
     private javax.swing.JToggleButton button5F;
+    private javax.swing.JLabel economyClassLabel;
     private javax.swing.JLabel enterFirstNameLabel;
     private javax.swing.JLabel enterLastNameLabel;
+    private javax.swing.JLabel firstClassLabel;
     private javax.swing.JTextField firstNameTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
