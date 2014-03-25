@@ -51,13 +51,13 @@ public class AirlineReciept extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(336, 284));
         getContentPane().setLayout(null);
 
-        firstNameLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        firstNameLabel.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         getContentPane().add(firstNameLabel);
-        firstNameLabel.setBounds(120, 60, 70, 20);
+        firstNameLabel.setBounds(122, 46, 82, 38);
 
-        lastNameLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        lastNameLabel.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         getContentPane().add(lastNameLabel);
-        lastNameLabel.setBounds(210, 60, 100, 20);
+        lastNameLabel.setBounds(206, 44, 106, 40);
 
         seatLabel.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         getContentPane().add(seatLabel);
