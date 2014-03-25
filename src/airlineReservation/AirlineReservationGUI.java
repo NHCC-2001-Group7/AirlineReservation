@@ -183,6 +183,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         getContentPane().add(button2D);
         button2D.setBounds(506, 394, 48, 48);
 
+        button3A.setText("3A");
+        button3A.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         button3A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AirlineReservationGUI.this.actionPerformed(evt);
@@ -281,7 +283,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
         button5A.setBorderPainted(false);
         button5A.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        button5A.setRolloverEnabled(false);
         button5A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AirlineReservationGUI.this.actionPerformed(evt);
@@ -290,7 +291,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         getContentPane().add(button5A);
         button5A.setBounds(312, 250, 36, 36);
 
-        button5B.setRolloverEnabled(false);
         button5B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AirlineReservationGUI.this.actionPerformed(evt);
