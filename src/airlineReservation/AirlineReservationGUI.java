@@ -556,6 +556,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
             if(element.isSelected()){ //if a button has been selected
                 element.setDisabledIcon(airline.SEAT_IMAGES[0]); //sets disabled icon to red image
                 element.setEnabled(false); //disable button
+                element.setSelected(false);
             }
         }
         
@@ -588,6 +589,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         //for loop iterates through array to see if any buttons have been selected
         for(int i = 0; i < buttons.length; i++){
+            
             if(buttons[i].isSelected()){ //if user selects a button
                 buttons[i].setIcon(airline.SEAT_IMAGES[1]); //change button's icon to green image
                 
