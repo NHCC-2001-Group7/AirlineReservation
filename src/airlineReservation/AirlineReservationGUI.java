@@ -35,6 +35,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private JToggleButton[] buttons;
     private String[] seatNumbers;
     
+    private final File fly = new File("FlyBy.wav");
+    private final File ping1 = new File("Ping1.wav");
+    private final File ping2 = new File("Ping2.wav");
+    
     
     //create sound files
     //private final File infinity = new File("infinity.wav");
@@ -548,6 +552,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         //enhanced for loop that disables buttons if they have been selected
         for(JToggleButton element: buttons){
+            airline.soundClip(fly); //play sound clip
             if(element.isSelected()){ //if a button has been selected
                 element.setDisabledIcon(airline.SEAT_IMAGES[0]); //sets disabled icon to red image
                 element.setEnabled(false); //disable button
@@ -575,7 +580,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         seat = savedSeats.toString(); //resets seat value
         
         selectSeatLabel.setText("Please Choose a Seat on the Plane"); //resets label text
-        
+                
         //airline.soundClip(infinity); //play sound clip
     }//GEN-LAST:event_acceptButtonActionPerformed
 
@@ -591,17 +596,19 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                     savedSeats.delete(j, j + seatNumbers[i].length()); //Clears previous text so line 498 text doesn't build up
                 }
                 
+                airline.soundClip(ping1); //play sound clip
                 savedSeats.append(seatNumbers[i]); //add seat to StringBuilder (get string from seatNumber array)
                 acceptLabel.setText("Hit Accept"); //Makes "Hit Accept" text appear after a seat has been selected
             }
             else{ //user deselects button
                 buttons[i].setIcon(airline.SEAT_IMAGES[2]); //return button's icon to default white image
-                
+                airline.soundClip(ping2); //play sound clip
                 //remove seat from StringBuilder
                 int j = savedSeats.indexOf(seatNumbers[i]); //finds the index that the seat's string first occurs
                 if(j != -1){
                     savedSeats.delete(j, j + seatNumbers[i].length()); //delete seat from StringBuilder
                 }
+                               
             }
             
             //applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
