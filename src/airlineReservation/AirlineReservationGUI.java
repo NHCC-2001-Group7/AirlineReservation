@@ -552,15 +552,14 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
         
         //enhanced for loop that disables buttons if they have been selected
-        for(JToggleButton element: buttons){
-            airline.soundClip(enjoy); //play sound clip
+        for(JToggleButton element: buttons){            
             if(element.isSelected()){ //if a button has been selected
                 element.setDisabledIcon(airline.SEAT_IMAGES[0]); //sets disabled icon to red image
                 element.setEnabled(false); //disable button
             }
         }
         
-        
+        airline.soundClip(enjoy); //play sound clip
         firstName = firstNameTextField.getText(); //read string input from user and assign to variable
         lastName = lastNameTextField.getText(); //read string input from user and assign to variable
         
