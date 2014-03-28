@@ -18,7 +18,6 @@ package airlineReservation;
 
 //import classes
 import javax.swing.JToggleButton;
-import java.io.*;
 import java.net.URL;
 
 public class AirlineReservationGUI extends javax.swing.JFrame {
