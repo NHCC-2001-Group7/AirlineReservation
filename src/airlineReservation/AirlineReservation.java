@@ -60,14 +60,16 @@ public class AirlineReservation {
     private final URL PING1 = this.getClass().getResource("sounds/Ping1.wav");
     
     //create soundClip array
-    URL[] SOUND = {JETPLANE, CLICK, PING1};
+    final URL[] SOUND = {JETPLANE, CLICK, PING1};
+    
+    
+    //create seatNumbers array
+    final String[] SEAT_NUMBERS = new String[] {"1A ", "1B ", "1C ", "1D ", "2A ", "2B ", "2C ", "2D ", "3A ", "3B ", "3C ", "3D ", "3E ", "3F ",
+        "4A ", "4B ", "4C ", "4D ", "4E ", "4F ", "5A ", "5B ", "5C ", "5D ", "5E ", "5F "};
     
     
     private boolean[] isTaken_FC = new boolean [FIRST_CLASS_SEATS]; //create first class array
     private boolean[] isTaken_EC = new boolean [ECONOMY_CLASS_SEATS]; //create economy class array
-    
-    
-    
     
     
     /**

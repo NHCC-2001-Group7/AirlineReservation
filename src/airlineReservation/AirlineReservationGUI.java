@@ -34,7 +34,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     
     //declare button array
     private JToggleButton[] buttons;
-    private String[] seatNumbers;
     
     
     
@@ -47,7 +46,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
             
         buttonArray(); //method to initialize button array (add buttons to array)
         setupButtons(); //method to setup buttons
-        seatNumberArray(); //method to initialize seatNumber array (add seat numbers to array)
         
         //background music?
         airline.soundClip(airline.SOUND[0]); //play sound clip from Sound array
@@ -499,21 +497,13 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         }
     }
     
-    //method to initialize seatNumber array
-    private void seatNumberArray(){
-        
-        //adds seat numbers to array
-        seatNumbers = new String[] {"1A ", "1B ", "1C ", "1D ", "2A ", "2B ", "2C ", "2D ", "3A ", "3B ", "3C ", "3D ", "3E ", "3F ",
-        "4A ", "4B ", "4C ", "4D ", "4E ", "4F ", "5A ", "5B ", "5C ", "5D ", "5E ", "5F "};
-    }
-    
     //method to remove seat number text from StringBuilder
     private void removeSeat(){
         
         //remove seat from StringBuilder
-        int j = savedSeats.indexOf(seatNumbers[i]); //finds the index that the seat's string first occurs
+        int j = savedSeats.indexOf(airline.SEAT_NUMBERS[i]); //finds the index that the seat's string first occurs
         if(j != -1){
-            savedSeats.delete(j, j + seatNumbers[i].length()); //delete seat number from StringBuilder
+            savedSeats.delete(j, j + airline.SEAT_NUMBERS[i].length()); //delete seat number from StringBuilder
         }
     }
     
@@ -594,7 +584,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 
                 airline.soundClip(airline.SOUND[1]); //play sound clip
                 
-                savedSeats.append(seatNumbers[i]); //add seat to StringBuilder (get string from seatNumber array)
+                savedSeats.append(airline.SEAT_NUMBERS[i]); //add seat to StringBuilder (get string from seatNumber array)
                 acceptLabel.setText("Hit Accept"); //Makes "Hit Accept" text appear after a seat has been selected
             }
             else{ //user deselects button
