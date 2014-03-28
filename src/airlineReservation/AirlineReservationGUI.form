@@ -669,7 +669,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/ImageDisplay/SeatingChart4.jpg"/>
+              <Image iconType="3" name="/airlineReservation/images/SeatingChart4.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -683,7 +683,7 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/ImageDisplay/About.jpg"/>
+              <Image iconType="3" name="/airlineReservation/images/About.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel2"/>
           </Properties>
@@ -731,7 +731,7 @@
           <Color blue="99" green="ff" red="99" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/ImageDisplay/Airline 6.jpg"/>
+          <Image iconType="3" name="/airlineReservation/images/Airline 6.jpg"/>
         </Property>
       </Properties>
       <Constraints>

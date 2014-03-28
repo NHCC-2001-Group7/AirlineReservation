@@ -472,10 +472,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         getContentPane().add(acceptButton);
         acceptButton.setBounds(60, 252, 174, 52);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/SeatingChart4.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/SeatingChart4.jpg"))); // NOI18N
         jTabbedPane1.addTab("Help", jLabel1);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/About.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/About.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
         jTabbedPane1.addTab("About", jLabel2);
 
@@ -495,7 +495,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         economyClassLabel.setBounds(350, 226, 170, 20);
 
         background.setBackground(new java.awt.Color(153, 255, 153));
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/Airline 6.jpg"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/Airline 6.jpg"))); // NOI18N
         getContentPane().add(background);
         background.setBounds(0, -50, 740, 720);
 
