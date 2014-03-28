@@ -19,6 +19,7 @@ package airlineReservation;
 //import classes
 import javax.swing.JToggleButton;
 import java.io.*;
+import java.net.URL;
 
 public class AirlineReservationGUI extends javax.swing.JFrame {
     
@@ -37,13 +38,14 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private String[] seatNumbers;
     
     //create sound files    
-    private final File ding = new File("Click.wav");
-    private final File enjoy = new File("Ping1.wav");
+    private final URL ding = this.getClass().getResource("sounds/Click.wav");
+    private final URL enjoy = this.getClass().getResource("sounds/Ping1.wav");
+    
+     //"background music"
+    private final URL jetplane = this.getClass().getResource("sounds/John Denver - Leaving on a Jetplane.wav");
     
     
-    //private final File infinity = new File("infinity.wav");
     
-
     /**
      * Creates new form AirlineReservationGUI
      */
@@ -54,6 +56,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         buttonArray(); //method to initialize button array (add buttons to array)
         setupButtons(); //method to setup buttons
         seatNumberArray(); //method to initialize seatNumber array (add seat numbers to array)
+        
+        airline.soundClip(jetplane); //play sound clip
     }
     
     /**
@@ -576,6 +580,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         disableSelectedButtons(); //call method that will disable any selected buttons
         
         airline.soundClip(enjoy); //play sound clip
+        //airline.soundClip(infinity); //play sound clip
         
         createCustomer(); //call method to read input from user and create new customer
         

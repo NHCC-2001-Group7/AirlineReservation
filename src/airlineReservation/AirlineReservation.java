@@ -35,6 +35,7 @@ package airlineReservation;
 import java.io.*;
 import javax.sound.sampled.*;
 import javax.swing.ImageIcon;
+import java.net.URL;
 
 
 public class AirlineReservation {
@@ -76,15 +77,10 @@ public class AirlineReservation {
 //        
 //        isTaken_EC[num] = true;
 //    }
-
     
-
-    /**
-     *
-     * @param soundFile method that creates the soundClip and plays the soundFile
-     */
-    public void soundClip(File soundFile){
-        
+    
+    //method to play sound clip
+    public void soundClip(URL soundFile){
         try{
             AudioInputStream audio = AudioSystem.getAudioInputStream(soundFile); //open an audio input stream
             Clip clip = AudioSystem.getClip(); //get a sound clip resource
@@ -93,7 +89,7 @@ public class AirlineReservation {
         }catch(  UnsupportedAudioFileException | IOException | LineUnavailableException uae){
             System.out.println(uae);
         }  
-    }      
+    }
 }
 
 
