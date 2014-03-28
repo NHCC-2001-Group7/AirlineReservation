@@ -40,17 +40,14 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     
     //create documentListener to validate if text is entered in TextFields
     DocumentListener documentListener = new DocumentListener() {
-
         @Override
         public void removeUpdate(DocumentEvent e) {
             validateNames();
         }
-
         @Override
         public void insertUpdate(DocumentEvent e) {
             validateNames();
         }
-
         @Override
         public void changedUpdate(DocumentEvent e) {
             validateNames();
@@ -612,8 +609,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_acceptButtonActionPerformed
 
     private void actionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actionPerformed
-        
         airline.soundClip(airline.SOUND[1]); //play sound clip
+        
         //for loop iterates through array to see if any buttons have been selected
         for(i = 0; i < buttons.length; i++){ 
             if(buttons[i].isSelected()){ //if user selects a button
