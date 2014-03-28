@@ -504,7 +504,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     
     
     //method to validate if user entered names before allowing acceptButton to be pressed
-    public void validateNames(){
+    private void validateNames(){
         if(firstNameTextField.getText().equals("") || lastNameTextField.getText().equals("")){ //if no text in either textField
             acceptButton.setEnabled(false); //disable acceptButton
         }
