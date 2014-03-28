@@ -30,6 +30,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     
     //declare field variables
     private String firstName, lastName, seat;
+    private int i;
     
     //declare button array
     private JToggleButton[] buttons;
@@ -40,8 +41,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private final File enjoy = new File("Ping1.wav");
     
     
-    
-    //create sound files
     //private final File infinity = new File("infinity.wav");
     
 
@@ -511,6 +510,16 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         "4A ", "4B ", "4C ", "4D ", "4E ", "4F ", "5A ", "5B ", "5C ", "5D ", "5E ", "5F "};
     }
     
+    //method to remove seat number text from StringBuilder
+    private void removeSeat(){
+        
+        //remove seat from StringBuilder
+        int j = savedSeats.indexOf(seatNumbers[i]); //finds the index that the seat's string first occurs
+        if(j != -1){
+            savedSeats.delete(j, j + seatNumbers[i].length()); //delete seat number from StringBuilder
+        }
+    }
+    
     //method that converts StringBuilder toString and applys it
     private void applyStringBuilder(){
         
@@ -519,75 +528,90 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         //sets seat value
         seat = savedSeats.toString();
-    } 
+    }
     
-    private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
+    //method that disables any selected buttons
+    private void disableSelectedButtons(){
         
         //enhanced for loop that disables buttons if they have been selected
         for(JToggleButton element: buttons){            
             if(element.isSelected()){ //if a button has been selected
                 element.setDisabledIcon(airline.SEAT_IMAGES[0]); //sets disabled icon to red image
                 element.setEnabled(false); //disable button
-                element.setSelected(false);
+                element.setSelected(false); //sets button to  "unselected"
             }
         }
-        
-        airline.soundClip(enjoy); //play sound clip
+    }
+    
+    //method that reads input from user and creates new customer
+    private void createCustomer(){
         firstName = firstNameTextField.getText(); //read string input from user and assign to variable
         lastName = lastNameTextField.getText(); //read string input from user and assign to variable
         
-        customer = new Customer(firstName, lastName); //initialize customer object
+        customer = new Customer(firstName, lastName); //initialize customer object 
+    }
+    
+    //method to reset StringBuilder
+    private void resetStringBuilder(){
         
-        //creates new AirlineReceipt object
-        AirlineReciept receipt = new AirlineReciept(customer.getFirstName(), customer.getLastName(), seat);
-        receipt.setVisible(true); //displays pop-up JFrame 
-        
+        //reset StringBuilder
+        int k = savedSeats.length(); //finds the length of the StringBuilder
+        savedSeats.replace(0, k, "Seats: "); //replaces any seats selected
+        seat = savedSeats.toString(); //resets seat value
+    }
+    
+    //method to reset TextFields, StringBuilder and selectSeatLabel
+    private void resetForNewCustomer(){
         
         //reset TextFields
         firstNameTextField.setText("");
         lastNameTextField.setText("");
         
-        //reset StringBuilder
-        int i = savedSeats.length(); //finds the length of the StringBuilder
-        savedSeats.replace(0, i, "Seats: "); //replaces any seats selected
-        seat = savedSeats.toString(); //resets seat value
+        resetStringBuilder(); //call method to reset StringBuilder
         
         selectSeatLabel.setText("Please Choose a Seat on the Plane"); //resets label text
-                
-        //airline.soundClip(infinity); //play sound clip
+    }
+    
+    private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
+        disableSelectedButtons(); //call method that will disable any selected buttons
+        
+        airline.soundClip(enjoy); //play sound clip
+        
+        createCustomer(); //call method to read input from user and create new customer
+        
+        //creates new AirlineReceipt object
+        AirlineReciept receipt = new AirlineReciept(customer.getFirstName(), customer.getLastName(), seat);
+        receipt.setVisible(true); //displays pop-up JFrame 
+        
+        resetForNewCustomer(); //method to reset TextFields, StringBuilder and selectSeatLabel
     }//GEN-LAST:event_acceptButtonActionPerformed
 
     private void actionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actionPerformed
         
         //for loop iterates through array to see if any buttons have been selected
-        for(int i = 0; i < buttons.length; i++){
-            
+        for(i = 0; i < buttons.length; i++){ 
             if(buttons[i].isSelected()){ //if user selects a button
                 buttons[i].setIcon(airline.SEAT_IMAGES[1]); //change button's icon to green image
                 
-                int j = savedSeats.indexOf(seatNumbers[i]); //finds the index that the seat's string first occurs
-                if(j != -1){
-                    savedSeats.delete(j, j + seatNumbers[i].length()); //Clears previous text so line 498 text doesn't build up                    
-                }
-                airline.soundClip(ding); //play sound clip                            
+                removeSeat(); //call method to remove seat number text from StringBuilder
+                
+                airline.soundClip(ding); //play sound clip
+                
                 savedSeats.append(seatNumbers[i]); //add seat to StringBuilder (get string from seatNumber array)
                 acceptLabel.setText("Hit Accept"); //Makes "Hit Accept" text appear after a seat has been selected
             }
             else{ //user deselects button
                 buttons[i].setIcon(airline.SEAT_IMAGES[2]); //return button's icon to default white image
                 
-                //remove seat from StringBuilder
-                int j = savedSeats.indexOf(seatNumbers[i]); //finds the index that the seat's string first occurs
-                if(j != -1){
-                    savedSeats.delete(j, j + seatNumbers[i].length()); //delete seat from StringBuilder
-                    airline.soundClip(ding); //play sound clip
-                }         
+                removeSeat(); //call method to remove seat number text from StringBuilder
+                
+                airline.soundClip(ding); //play sound clip
             }
         }
         
         applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
     }//GEN-LAST:event_actionPerformed
-
+    
     /**
      * @param args the command line arguments
      */
