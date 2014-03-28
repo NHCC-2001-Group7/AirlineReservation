@@ -617,7 +617,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         for(i = 0; i < buttons.length; i++){ 
             if(buttons[i].isSelected()){ //if user selects a button
                 buttons[i].setIcon(airline.SEAT_IMAGES[1]); //change button's icon to green image
-                
+                              
                 removeSeat(); //call method to remove seat number text from StringBuilder
                 
                 airline.soundClip(airline.SOUND[1]); //play sound clip
