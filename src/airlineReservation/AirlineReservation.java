@@ -54,9 +54,20 @@ public class AirlineReservation {
     final ImageIcon[] SEAT_IMAGES = {RED, GREEN, WHITE};
     
     
+    //create sound files
+    private final URL JETPLANE = this.getClass().getResource("sounds/John Denver - Leaving on a Jetplane.wav"); //"background music"
+    private final URL CLICK = this.getClass().getResource("sounds/Click.wav");
+    private final URL PING1 = this.getClass().getResource("sounds/Ping1.wav");
+    
+    //create soundClip array
+    URL[] SOUND = {JETPLANE, CLICK, PING1};
+    
     
     private boolean[] isTaken_FC = new boolean [FIRST_CLASS_SEATS]; //create first class array
     private boolean[] isTaken_EC = new boolean [ECONOMY_CLASS_SEATS]; //create economy class array
+    
+    
+    
     
     
     /**

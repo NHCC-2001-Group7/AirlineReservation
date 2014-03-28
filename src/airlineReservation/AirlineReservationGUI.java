@@ -18,7 +18,7 @@ package airlineReservation;
 
 //import classes
 import javax.swing.JToggleButton;
-import java.net.URL;
+
 
 public class AirlineReservationGUI extends javax.swing.JFrame {
     
@@ -36,13 +36,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private JToggleButton[] buttons;
     private String[] seatNumbers;
     
-    //create sound files    
-    private final URL ding = this.getClass().getResource("sounds/Click.wav");
-    private final URL enjoy = this.getClass().getResource("sounds/Ping1.wav");
-    
-     //"background music"
-    private final URL jetplane = this.getClass().getResource("sounds/John Denver - Leaving on a Jetplane.wav");
-    
     
     
     /**
@@ -56,7 +49,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         setupButtons(); //method to setup buttons
         seatNumberArray(); //method to initialize seatNumber array (add seat numbers to array)
         
-        airline.soundClip(jetplane); //play sound clip
+        //background music?
+        airline.soundClip(airline.SOUND[0]); //play sound clip from Sound array
     }
     
     /**
@@ -578,8 +572,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
         disableSelectedButtons(); //call method that will disable any selected buttons
         
-        airline.soundClip(enjoy); //play sound clip
-        //airline.soundClip(infinity); //play sound clip
+        airline.soundClip(airline.SOUND[2]); //play sound clip
         
         createCustomer(); //call method to read input from user and create new customer
         
@@ -599,7 +592,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 
                 removeSeat(); //call method to remove seat number text from StringBuilder
                 
-                airline.soundClip(ding); //play sound clip
+                airline.soundClip(airline.SOUND[1]); //play sound clip
                 
                 savedSeats.append(seatNumbers[i]); //add seat to StringBuilder (get string from seatNumber array)
                 acceptLabel.setText("Hit Accept"); //Makes "Hit Accept" text appear after a seat has been selected
@@ -609,7 +602,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 
                 removeSeat(); //call method to remove seat number text from StringBuilder
                 
-                airline.soundClip(ding); //play sound clip
+                airline.soundClip(airline.SOUND[1]); //play sound clip
             }
         }
         
