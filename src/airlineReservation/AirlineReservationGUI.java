@@ -18,6 +18,8 @@ package airlineReservation;
 
 //import classes
 import javax.swing.JToggleButton;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 
 public class AirlineReservationGUI extends javax.swing.JFrame {
@@ -36,12 +38,31 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private JToggleButton[] buttons;
     
     
+    //create documentListener to validate if text is entered in TextFields
+    DocumentListener documentListener = new DocumentListener() {
+
+        @Override
+        public void removeUpdate(DocumentEvent e) {
+            validateNames();
+        }
+
+        @Override
+        public void insertUpdate(DocumentEvent e) {
+            validateNames();
+        }
+
+        @Override
+        public void changedUpdate(DocumentEvent e) {
+            validateNames();
+        }
+    };
     
     /**
      * Creates new form AirlineReservationGUI
      */
     public AirlineReservationGUI() {
         initComponents();
+        
         savedSeats.append("Seats: "); //adds initial string to StringBuilder
             
         buttonArray(); //method to initialize button array (add buttons to array)
@@ -49,6 +70,12 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         //background music?
         airline.soundClip(airline.SOUND[0]); //play sound clip from Sound array
+        
+        acceptButton.setEnabled(false); //set acceptButton to disabled as default
+        
+        //add documentListeners to each TextField to validate if user input text into TextFields
+        firstNameTextField.getDocument().addDocumentListener(documentListener);
+        lastNameTextField.getDocument().addDocumentListener(documentListener);
     }
     
     /**
@@ -478,6 +505,17 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
+    
+    //method to validate if user entered names before allowing acceptButton to be pressed
+    public void validateNames(){
+        if(firstNameTextField.getText().equals("") || lastNameTextField.getText().equals("")){ //if no text in either textField
+            acceptButton.setEnabled(false); //disable acceptButton
+        }
+        else{ //user input firstName and lastName
+            acceptButton.setEnabled(true); //enable acceptButton
+        }
+    }
+    
     //method to initialize button array
     private void buttonArray(){
         
@@ -570,7 +608,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         AirlineReciept receipt = new AirlineReciept(customer.getFirstName(), customer.getLastName(), seat);
         receipt.setVisible(true); //displays pop-up JFrame 
         
-        resetForNewCustomer(); //method to reset TextFields, StringBuilder and selectSeatLabel
+        resetForNewCustomer(); //method to reset TextFields, StringBuilder and selectSeatLabel      
     }//GEN-LAST:event_acceptButtonActionPerformed
 
     private void actionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actionPerformed
@@ -595,7 +633,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 airline.soundClip(airline.SOUND[1]); //play sound clip
             }
         }
-        
         applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
     }//GEN-LAST:event_actionPerformed
     
