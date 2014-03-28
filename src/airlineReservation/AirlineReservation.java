@@ -56,11 +56,11 @@ public class AirlineReservation {
     
     //create sound files
     private final URL JETPLANE = this.getClass().getResource("sounds/John Denver - Leaving on a Jetplane.wav"); //"background music"
-    private final URL CLICK = this.getClass().getResource("sounds/Click.wav");
-    private final URL PING1 = this.getClass().getResource("sounds/Ping1.wav");
+    private final URL DING = this.getClass().getResource("sounds/Ding1.wav");
+    private final URL AIRPLANE = this.getClass().getResource("sounds/AIRPLANE.wav");
     
     //create soundClip array
-    final URL[] SOUND = {JETPLANE, CLICK, PING1};
+    final URL[] SOUND = {JETPLANE, DING, AIRPLANE};
     
     
     //create seatNumbers array

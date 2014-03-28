@@ -613,14 +613,13 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
 
     private void actionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actionPerformed
         
+        airline.soundClip(airline.SOUND[1]); //play sound clip
         //for loop iterates through array to see if any buttons have been selected
         for(i = 0; i < buttons.length; i++){ 
             if(buttons[i].isSelected()){ //if user selects a button
                 buttons[i].setIcon(airline.SEAT_IMAGES[1]); //change button's icon to green image
                               
-                removeSeat(); //call method to remove seat number text from StringBuilder
-                
-                airline.soundClip(airline.SOUND[1]); //play sound clip
+                removeSeat(); //call method to remove seat number text from StringBuilder                
                 
                 savedSeats.append(airline.SEAT_NUMBERS[i]); //add seat to StringBuilder (get string from seatNumber array)
                 acceptLabel.setText("Hit Accept"); //Makes "Hit Accept" text appear after a seat has been selected
@@ -630,7 +629,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 
                 removeSeat(); //call method to remove seat number text from StringBuilder
                 
-                airline.soundClip(airline.SOUND[1]); //play sound clip
             }
         }
         applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
