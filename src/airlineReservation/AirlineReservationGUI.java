@@ -36,8 +36,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private String[] seatNumbers;
     
     //create sound files    
-    private final File ding = new File("Ding1.wav");
-    private final File enjoy = new File("EnjoyYourFlight.wav");
+    private final File ding = new File("Click.wav");
+    private final File enjoy = new File("Ping1.wav");
     
     
     
@@ -500,10 +500,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         for(JToggleButton element: buttons){
             element.setIcon(airline.SEAT_IMAGES[2]); //sets all button icons to white image
             element.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER); //sets text to center instead of trailing
-            //element.
-            //element.setRolloverIcon(null);
-            //element.setFocusable(false);
-            //element.setBorder(null);
         }
     }
     
@@ -515,39 +511,15 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         "4A ", "4B ", "4C ", "4D ", "4E ", "4F ", "5A ", "5B ", "5C ", "5D ", "5E ", "5F "};
     }
     
-//    //method that converts StringBuilder toString and applys it
-//    private void applyStringBuilder(){
-//        
-//        //sets label text
-//        selectSeatLabel.setText(savedSeats.toString());
-//        
-//        //sets seat value
-//        seat = savedSeats.toString();
-//    } 
-    
-    //this is just a backup for button1AActionPerformed...ignore for now
-    private void ignoreMe(){
+    //method that converts StringBuilder toString and applys it
+    private void applyStringBuilder(){
         
-//        //declare local variable
-//        String seatSelected = " 1B";
-//        
-//        //if user selects button
-//        if(button1B.isSelected()){
-//            button1B.setIcon(airline.SEAT_IMAGES[1]); //change icon to green image
-//            savedSeats.append(seatSelected); //add seat to StringBuilder
-//        }
-//        else{ //user deselects button
-//            button1B.setIcon(airline.SEAT_IMAGES[2]); //return icon to default white image
-//            
-//            //remove seat from StringBuilder
-//            int i = savedSeats.indexOf(seatSelected); //finds the index that the seat's string first occurs
-//            if(i != -1){
-//                savedSeats.delete(i, i + seatSelected.length()); //delete seat from StringBuilder
-//            }
-//        }
-//        
-//        applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
-    }
+        //sets label text
+        selectSeatLabel.setText(savedSeats.toString());
+        
+        //sets seat value
+        seat = savedSeats.toString();
+    } 
     
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
         
@@ -609,21 +581,11 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 if(j != -1){
                     savedSeats.delete(j, j + seatNumbers[i].length()); //delete seat from StringBuilder
                     airline.soundClip(ding); //play sound clip
-                }
-                
-                               
+                }         
             }
-            
-            //applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
         }
         
-        //sets label text
-        selectSeatLabel.setText(savedSeats.toString());
-        
-        //sets seat value
-        seat = savedSeats.toString();
-        
-        //applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
+        applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
     }//GEN-LAST:event_actionPerformed
 
     /**
