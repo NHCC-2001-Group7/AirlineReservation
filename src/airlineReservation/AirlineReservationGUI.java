@@ -453,12 +453,12 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         lastNameTextField.setBounds(160, 140, 120, 30);
 
         selectSeatLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        selectSeatLabel.setText("Please Choose a Seat on the Plane");
+        selectSeatLabel.setText("Please Enter Your Name and Choose a");
         getContentPane().add(selectSeatLabel);
         selectSeatLabel.setBounds(28, 178, 248, 34);
 
         acceptLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        acceptLabel.setText("and then Hit Accept");
+        acceptLabel.setText("Seat on the Plane, then Hit Accept");
         getContentPane().add(acceptLabel);
         acceptLabel.setBounds(28, 214, 242, 28);
 
