@@ -32,7 +32,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     
     //declare field variables
     private String firstName, lastName, seat;
-    private int i;
+    private int i, seatCounter;
     
     //declare button array
     private JToggleButton[] buttons;
@@ -591,7 +591,8 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         resetStringBuilder(); //call method to reset StringBuilder
         
-        selectSeatLabel.setText("Please Choose a Seat on the Plane"); //resets label text
+        selectSeatLabel.setText("Please Enter Your Name and Choose a"); //resets label text
+        acceptLabel.setText("Seat on the Plane, then Hit Accept"); //resets label text
     }
     
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
