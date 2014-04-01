@@ -517,10 +517,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         else{ //user input firstName and lastName
             if(seatCounter != 0){ //if the seatCounter does not equal 0 the accept button will be enabled
                 acceptButton.setEnabled(true); //enable acceptButton
-                info1Label.setText(" "); //removes text if customer has entered name and selected seat
+                info1Label.setText(" "); //removes text if customer has entered name and selected a seat
                 info2Label.setText("Hit Accept"); //Makes "Hit Accept" text appear after a seat has been selected and name entered
             }
-            if(seatCounter ==0){ //if the seatCounter equals 0 the accept button will be disabled
+            else{ //if the seatCounter equals 0 the accept button will be disabled
                 acceptButton.setEnabled(false); //disable acceptButton
             }
         }
