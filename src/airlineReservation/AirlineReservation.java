@@ -37,7 +37,10 @@ import javax.sound.sampled.*;
 import javax.swing.ImageIcon;
 import java.net.URL;
 
-
+/**
+ * This class maintains the elements of the AirlineReservation project
+ * @author Mike Plucker, Billy Lam, Xavier Porter
+ */
 public class AirlineReservation {
     
     //declare constants
@@ -93,7 +96,12 @@ public class AirlineReservation {
     
     
     //method to play sound clip
-    public void soundClip(URL soundFile){
+
+    /**
+     *  Method to play (@link soundClip) for Airline Reservation
+     * @param soundFile
+     */
+        public void soundClip(URL soundFile){
         try{
             AudioInputStream audio = AudioSystem.getAudioInputStream(soundFile); //open an audio input stream
             Clip clip = AudioSystem.getClip(); //get a sound clip resource
