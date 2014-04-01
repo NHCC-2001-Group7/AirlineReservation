@@ -11,7 +11,7 @@ import javax.swing.event.DocumentListener;
 
 /**
  * This class generates the main GUI for the program.
- * @author: Mike Plucker, Billy Lam, Xavier Porter
+ * @author Mike Plucker, Billy Lam, Xavier Porter
  * Class: CSCI 2001-51
  * Due Date: 03/31/14
  * 
