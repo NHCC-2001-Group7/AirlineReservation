@@ -64,7 +64,7 @@ public class AirlineReciept extends javax.swing.JFrame {
         getContentPane().add(seatLabel);
         seatLabel.setBounds(16, 90, 288, 34);
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImageDisplay/BoardingPass2.jpg"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/airlineReservation/images/BoardingPass2.jpg"))); // NOI18N
         getContentPane().add(background);
         background.setBounds(0, -28, 400, 300);
 
