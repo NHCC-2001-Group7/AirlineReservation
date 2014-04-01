@@ -656,7 +656,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 
                 seatCounter--; //removes increment to the seatCounter variable 
             }
-        }
+        }  
         validateNames(); //call method that validates names and button selection
         applyStringBuilder(); //method sets StringBuilder to text and passes to a variable
     }//GEN-LAST:event_actionPerformed
