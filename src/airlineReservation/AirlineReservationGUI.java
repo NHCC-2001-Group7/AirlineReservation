@@ -2,19 +2,6 @@
 package airlineReservation;
 
 
-/**
- * 
- * @author: Mike Plucker, Billy Lam, Xavier Porter
- * Class: CSCI 2001-51
- * Due Date: 03/31/14
- * 
- * Version: 1.00
- * 
- * 
- * This class generates the main GUI for the program.
- * 
- */
-
 
 //import classes
 import javax.swing.JToggleButton;
@@ -22,6 +9,14 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 
+/**
+ * This class generates the main GUI for the program.
+ * @author Mike Plucker, Billy Lam, Xavier Porter
+ * Class: CSCI 2001-51
+ * Due Date: 03/31/14
+ * 
+ * Version: 1.00
+ */
 public class AirlineReservationGUI extends javax.swing.JFrame {
     
     //create objects
@@ -508,9 +503,17 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
+
+
+    /**
+     * method that validates name of user before allowing accept Button to be pressed
+     * 
+     */
+          
     
     //method to validate if user entered names before allowing acceptButton to be pressed
     private void validateNames(){
+
         if(firstNameTextField.getText().equals("") || lastNameTextField.getText().equals("")){ //if no text in either textField
             acceptButton.setEnabled(false); //disable acceptButton
         }
@@ -526,7 +529,9 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         }
     }
     
-    //method to initialize button array
+    /**
+     * method to initialize button array
+     */
     private void buttonArray(){
         
         //adds buttons to button array
@@ -535,7 +540,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         button4F, button5A, button5B, button5C, button5D, button5E, button5F};
     }
     
-    //method to setup buttons
+    
+    /**
+     * method to setup buttons
+     */
     private void setupButtons(){
         
         //enhanced for loop will act on all buttons
@@ -545,7 +553,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         }
     }
     
-    //method to remove seat number text from StringBuilder
+    
+    /**
+     * method to remove seat number text from StringBuilder
+     */
     private void removeSeat(){
         
         //remove seat from StringBuilder
@@ -555,7 +566,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         }
     }
     
-    //method that converts StringBuilder toString and applys it
+    
+    /**
+     * method that converts StringBuilder toString and applies it
+     */
     private void applyStringBuilder(){
         
         //sets label text
@@ -565,7 +579,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         seat = savedSeats.toString();
     }
     
-    //method that disables any selected buttons
+    
+    /**
+     *  method that disables any selected buttons
+     */
     private void disableSelectedButtons(){
         
         //enhanced for loop that disables buttons if they have been selected
@@ -578,7 +595,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         }
     }
     
-    //method that reads input from user and creates new customer
+  
+    /**
+     * method that reads input from user and creates new customer
+     */
     private void createCustomer(){
         firstName = firstNameTextField.getText(); //read string input from user and assign to variable
         lastName = lastNameTextField.getText(); //read string input from user and assign to variable
@@ -586,7 +606,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         customer = new Customer(firstName, lastName); //initialize customer object 
     }
     
-    //method to reset StringBuilder
+
+    /**
+     * method that resets StringBuilder
+     */
     private void resetStringBuilder(){
         
         //reset StringBuilder
@@ -595,7 +618,10 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         seat = savedSeats.toString(); //resets seat value
     }
     
-    //method to reset TextFields, StringBuilder and selectSeatLabel
+   
+    /**
+     * method that resets TextFields, StringBuilder, and selectSeatLabel
+     */
     private void resetForNewCustomer(){
         
         //reset TextFields
