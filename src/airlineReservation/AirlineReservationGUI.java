@@ -66,9 +66,12 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         acceptButton.setEnabled(false); //set acceptButton to disabled as default
         
+        seatTextField.setEditable(false); //text in textField can't be edited
+        
         //add documentListeners to each TextField to validate if user input text into TextFields
         firstNameTextField.getDocument().addDocumentListener(documentListener);
         lastNameTextField.getDocument().addDocumentListener(documentListener);
+        seatTextField.getDocument().addDocumentListener(documentListener);
     }
     
     
@@ -112,9 +115,9 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         enterLastNameLabel = new javax.swing.JLabel();
         firstNameTextField = new javax.swing.JTextField();
         lastNameTextField = new javax.swing.JTextField();
+        seatTextField = new javax.swing.JTextField();
         info1Label = new javax.swing.JLabel();
         info2Label = new javax.swing.JLabel();
-        seatLabel = new javax.swing.JLabel();
         acceptButton = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jLabel1 = new javax.swing.JLabel();
@@ -447,6 +450,12 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         getContentPane().add(lastNameTextField);
         lastNameTextField.setBounds(160, 140, 120, 30);
 
+        seatTextField.setBackground(new java.awt.Color(180, 195, 234));
+        seatTextField.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        seatTextField.setText("Seats: ");
+        getContentPane().add(seatTextField);
+        seatTextField.setBounds(30, 180, 250, 30);
+
         info1Label.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         info1Label.setText("Please Enter Your Name and Choose a");
         getContentPane().add(info1Label);
@@ -456,11 +465,6 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         info2Label.setText("Seat on the Plane, then Hit Accept");
         getContentPane().add(info2Label);
         info2Label.setBounds(28, 222, 242, 28);
-
-        seatLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        seatLabel.setText("Seats:");
-        getContentPane().add(seatLabel);
-        seatLabel.setBounds(28, 177, 258, 24);
 
         acceptButton.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         acceptButton.setText("ACCEPT");
@@ -515,7 +519,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
                 info1Label.setText(" "); //removes text if customer has entered name and selected a seat
                 info2Label.setText("Hit Accept"); //Makes "Hit Accept" text appear after a seat has been selected and name entered
         }
-        else{ //if the seatCounter equals 0 the accept button will be disabled
+        if(seatTextField.getText().equals("Seats: ")){ //if the textField is the default text
                 acceptButton.setEnabled(false); //disable acceptButton
         }    
     }
@@ -561,7 +565,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private void applyStringBuilder(){
         
         //sets label text
-        seatLabel.setText(savedSeats.toString());
+        seatTextField.setText(savedSeats.toString());
         
         //sets seat value
         seat = savedSeats.toString();
@@ -616,7 +620,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
         
         seatCounter = 0; //resets seatCounter so info1 label and info2 label don't change when only a name is entered second run of program
         
-        seatLabel.setText("Seats: "); //resets label text
+        seatTextField.setText("Seats: "); //resets label text
         info1Label.setText("Please Enter Your Name and Choose a"); //resets label text
         info2Label.setText("Seat on the Plane, then Hit Accept"); //resets label text
     }
@@ -739,7 +743,7 @@ public class AirlineReservationGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField lastNameTextField;
-    private javax.swing.JLabel seatLabel;
+    private javax.swing.JTextField seatTextField;
     // End of variables declaration//GEN-END:variables
 
     private void setUpButton() {
