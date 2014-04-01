@@ -6,16 +6,14 @@
 
 package airlineReservation;
 
+
 /**
  * This class allows a customer to enter their name and have it be added to the receipt.
  * @author Mike Plucker, Billy Lam, Xavier Porter
  * Class: CSCI 2001-51
  * Due Date: 03/31/14
  * 
- * Version 1.00
- * 
- * 
- * 
+ * Version: Final
  */
 
 
@@ -23,7 +21,6 @@ public class Customer {
     
     //declare instance variables
     private String firstName, lastName;
-    
     
 
     /**

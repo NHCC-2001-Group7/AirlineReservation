@@ -6,14 +6,14 @@
 
 package airlineReservation;
 
+
 /**
  * This is the main method that creates and displays the GUI
  * @author Mike Plucker, Billy Lam, Xavier Porter
  * Class: CSCI 2001-51
  * Due Date: 03/31/14
  * 
- * Version 1.00
- * 
+ * Version: Final
  */
 
 
@@ -22,7 +22,6 @@ public class AirlineReservationTest {
     /**
      * @param args
      */
-    
     public static void main(String[] args){
     
         //create and display GUI

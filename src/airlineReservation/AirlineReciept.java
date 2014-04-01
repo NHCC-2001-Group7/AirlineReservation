@@ -6,19 +6,18 @@
 
 package airlineReservation;
 
+
 /**
  * This class creates the 2nd JFrame that pops up as a boarding pass or receipt.
  * @author Mike Plucker, Billy Lam, Xavier Porter
  * Class: CSCI 2001-51
  * Due Date: 03/31/14
  * 
- * Version 1.00
- * 
- * 
+ * Version: Final
  */
 
+
 public class AirlineReciept extends javax.swing.JFrame {
-    
     
     /**
      * Creates new form AirlineReciept
